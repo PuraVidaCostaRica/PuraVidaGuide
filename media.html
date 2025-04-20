@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English Media - Costa Rica Guide</title>
+  <link rel="stylesheet" href="css/styles-about.css" />  
+  <link rel="stylesheet" href="css/ad.css" />
+  <link rel="stylesheet" href="css/media-about.css">
+  <link rel="stylesheet" href="css/media-ad.css">
+ 
+</head>
+<body>
+  <header>
+    <h1>English-Language Media</h1>
+    <div class="logo-container">
+      <img class="logo" src="img/index/logo.webp" alt="PuraVida Guide Logo" />
+    </div>
+  </header>  
+  <main>
+    
+    <!-- Рекламный блок -->
+    <div class="ad-container" id="adContainer" style="display: none;">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn">×</button>
+        <div class="ad-content" id="adContent">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+  <!-- Рекламный блок -->
+  <div class="ad-container" id="adContainer" style="display: none;">
+    <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+      <button class="close-ad-btn" id="closeAdBtn">×</button>
+      <div class="ad-content" id="adContent1">
+        <h3 class="ad-title">Special Offer!</h3>
+        <button class="ad-action-btn" id="adActionBtn">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Рекламный блок1 -->
+  <div class="ad-container1" id="adContainer1">
+    <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+      <button class="close-ad-btn" id="closeAdBtn1">×</button>
+      <div class="ad-content" id="adContent1">
+        <h3 class="ad-title">Special Offer!</h3>
+        <button class="ad-action-btn" id="adActionBtn1">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Рекламный блок2 -->
+  <div class="ad-container2" id="adContainer2">
+    <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+      <button class="close-ad-btn" id="closeAdBtn2">×</button>
+      <div class="ad-content" id="adContent2">
+        <h3 class="ad-title">Special Offer!</h3>
+        <button class="ad-action-btn" id="adActionBtn2">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Рекламный блок3 -->
+  <div class="ad-container3" id="adContainer3">
+    <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+      <button class="close-ad-btn" id="closeAdBtn3">×</button>
+      <div class="ad-content" id="adContent3">
+        <h3 class="ad-title">Special Offer!</h3>
+        <button class="ad-action-btn" id="adActionBtn3">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Рекламный блок4 -->
+  <div class="ad-container4" id="adContainer4" style="display: none;">
+    <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+      <button class="close-ad-btn" id="closeAdBtn4">×</button>
+      <div class="ad-content" id="adContent4">
+        <h3 class="ad-title">Special Offer!</h3>
+        <button class="ad-action-btn" id="adActionBtn4">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+    <!-- Кнопка "Back to Home" -->
+    <div class="btnHome">
+      <button id="homeButton " aria-label="Back to homepage">
+        Back to Home
+      </button>
+    </div>
+
+    <section class="content">
+      <h2>English News Sources</h2>
+      <p>Stay updated with these reliable English-language media covering Costa Rica:</p>
+      
+      <div class="table-wrapper">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Resource</th>
+              <th>Description</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>The Tico Times</strong></td>
+              <td>Established in 1956. Covers news, tourism, and expat guides</td>
+              <td><a href="https://ticotimes.net" class="link" target="_blank">Visit</a></td>
+            </tr>
+            <tr>
+              <td><strong>Costa Rica News</strong></td>
+              <td>Aggregates and translates top Spanish-language news</td>
+              <td><a href="https://costaricanews.com" class="link" target="_blank">Visit</a></td>
+            </tr>
+            <tr>
+              <td><strong>Q Costa Rica</strong></td>
+              <td>Expat-focused with visa/residency advice</td>
+              <td><a href="https://qcostarica.com" class="link" target="_blank">Visit</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+         <!-- Рекламный блок5 -->
+    <div class="ad-container5" id="adContainer5">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn5">×</button>
+        <div class="ad-content" id="adContent5">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn5">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </main>
+      
+   <!-- JavaScript for navigation - back-home -->
+   <script>
+    document.getElementById("homeButton").addEventListener("click", function () {
+window.scrollTo({ top: 0, behavior: "smooth" });
+setTimeout(() => {
+    window.location.href = "index.html";
+}, 500); // Дадим полсекунды на плавную прокрутку
+});
+</script>
+
+  <script src="js/script-ad.js"></script>
+</body>
+</html>

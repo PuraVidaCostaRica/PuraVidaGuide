@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adventure Tours in Costa Rica | Zip-lining, Rafting, Surfing & More</title>
+  <meta name="description" content="Experience the thrill of Costa Rica with our top adventure tours: zip-lining, white water rafting, canyoning, ATV rides, surfing lessons, and more." />
+  <meta name="keywords" content="Costa Rica adventure tours, zip-lining, rafting, surfing, ATV, canyoning, extreme sports, scuba diving" />
+  <meta name="author" content="Pura Vida Guide" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Adventure Tours in Costa Rica | Zip-lining, Rafting, Surfing & More" />
+  <meta property="og:description" content="Discover Costa Rica's best adventure tours! Fly through the canopy, conquer the rapids, ride off-road trails, dive into the deep, and more." />
+  <meta property="og:image" content="https://yourdomain.com/images/og/adventure-tours.webp" />
+  <meta property="og:url" content="https://yourdomain.com/adventure-tours.html" />
+  <meta property="og:site_name" content="Pura Vida Guide to Costa Rica" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Adventure Tours in Costa Rica | Zip-lining, Rafting, Surfing & More" />
+  <meta name="twitter:description" content="From zip-lining to bungee jumping, explore Costa Rica's most thrilling adventure tours!" />
+  <meta name="twitter:image" content="https://yourdomain.com/images/og/adventure-tours.webp" />
+  <meta name="twitter:site" content="@PuraVidaCR" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristDestination",
+    "name": "Costa Rica Adventure Tours",
+    "description": "Costa Rica offers thrilling adventure tours including zip-lining, rafting, surfing, canyoning, and more.",
+    "image": "https://yourdomain.com/images/og/adventure-tours.webp",
+    "url": "https://yourdomain.com/adventure-tours.html",
+    "touristType": {
+      "@type": "Audience",
+      "audienceType": ["Adventure seekers", "Extreme sports enthusiasts"]
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "9.7489",
+      "longitude": "-83.7534"
+    }
+  }
+  </script>
+
+  <!--css-->
+  <link rel="stylesheet" href="css/styles-tours.css" />
+  <link rel="stylesheet" href="css/ad.css">
+  <link rel="stylesheet" href="css/img_btn.css">
+  <link rel="stylesheet" href="css/media-about.css">
+  <link rel="stylesheet" href="css/media-ad.css">
+
+  <!--favicon-->
+  <link rel="icon" href="img/index/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <header>
+    <h1>Adventure Tours</h1>
+    <div class="logo-container">
+      <img class="logo" src="img/index/logo.webp" alt="PuraVida Guide Logo" />
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Рекламный блок -->
+    <div class="ad-container" id="adContainer" style="display: none;">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn">×</button>
+        <div class="ad-content" id="adContent">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Рекламный блок1 -->
+    <div class="ad-container1" id="adContainer1">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn1">×</button>
+        <div class="ad-content" id="adContent1">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn1">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Рекламный блок2 -->
+    <div class="ad-container2" id="adContainer2">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn2">×</button>
+        <div class="ad-content" id="adContent2">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn2">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Рекламный блок3 -->
+    <div class="ad-container3" id="adContainer3">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn3">×</button>
+        <div class="ad-content" id="adContent3">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn3">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Кнопка "Back to Home" -->
+    <div class="btnHome">
+      <button id="homeButton" aria-label="Back to homepage">
+        Back to Home
+      </button>
+    </div>
+
+    <section class="intro-section">
+      <p class="intro-text">
+        Think Costa Rica is all beaches and sunsets? Think again!
+        This is the land where volcanoes rumble, rivers roar, and jungle canopies dare you to fly. Whether you're
+        zip-lining above the clouds, navigating raging rapids, or chasing waterfalls deep in the rainforest — adventure
+        is not optional here, it's a way of life.
+        <br>
+        So gear up, hold on tight, and let’s get your adrenaline pumping.
+      </p>
+    </section>
+
+    <div class="content1">
+      <!-- Вертикальное меню  -->
+      <nav class="tours-menu" id="top-menu">
+        <ul>
+          <ul>
+            <li><a href="#zip-lining_&_canopy-tours">🌳 Zip-lining & Canopy Tours</a></li>
+            <li><a href="#white-waterwrafting">🚣‍♂️ White Water Rafting</a></li>
+            <li><a href="#canyoning_&_waterfall-rappelling">🧗‍♂️ Canyoning & Waterfall Rappelling</a></li>
+            <li><a href="#ATV_&_off-road-adventures">🏍️ ATV & Off-Road Adventures</a></li>
+            <li><a href="#surfing-lessons_&_surf-camps">🏄‍♂️ Surfing Lessons & Surf Camps</a></li>
+            <li><a href="#bungee-jumping_&_extreme-sports">🪂 Bungee Jumping & Extreme Sports</a></li>
+            <li><a href="#scuba">🤿 Scuba diving & snorkeling</a></li>
+          </ul>
+
+        </ul>
+      </nav>
+    </div>
+
+    <section class="content2">
+        <div class="container">
+          <article class="artical1" id="zip-lining_&_canopy-tours">
+            <h2>Zip-lining and Canopy Tours</h2>
+
+            <img class="scroll-animate" src="img/tours/pop_tours/zipline2.webp" alt="Zip-lining in Costa Rica">
+            <img class="scroll-animate1" src="img/tours/pop_tours/canyoning.webp" alt="Canyoning in Costa Rica">
+            <div class="info-card">
+              <p>
+                Soar above the treetops or descend jungle waterfalls — these high-adrenaline activities are among Costa
+                Rica’s top adventures.
+                Zip-lining gives you a bird’s-eye view of the rainforest, often paired with hanging bridges and scenic
+                platforms.
+                For those who prefer a vertical thrill, canyoning (aka waterfall rappelling) takes you deep into lush
+                canyons for an unforgettable descent.
+              </p>
+              <p>
+                Both experiences are beginner-friendly, guided by professionals, and include all necessary safety
+                equipment.
+                From the misty heights of Monteverde to the wild canyons of Arenal and Manuel Antonio, there’s no
+                shortage of places to get your heart racing.
+              </p>
+              <ul>
+                <li><strong>Location:</strong> Arenal, Monteverde, Manuel Antonio, Turrialba</li>
+                <li><strong>Best For:</strong> Thrill-seekers and nature lovers</li>
+                <li><strong>Price:</strong> Zip-lining: $50–$90 · Canyoning: $75–$120 per person</li>
+                <li class="tour-links"><a href="https://www.viator.com/searchResults/all?text=zipline+costa+rica"
+                    target="_blank">More info & bookings</a></li>
+              </ul>
+              <div class="back-to-top btn-scroll-animate ">
+                <a href="#top-menu">↑ Back to Menu</a>
+              </div>
+            </div>
+          </article>
+          <div class="half-width-divider"></div>
+        
+        <article class="artical2" id="white-waterwrafting">
+          <h2>White Water Rafting</h2>
+          <img class="scroll-animate" src="img/tours/pop_tours/rafting1.webp" alt="White Water Rafting in Costa Rica">
+          <div class="info-card">
+            <p>
+              Costa Rica is a paradise for white water rafting, with rivers that suit both first-timers and adrenaline
+              junkies.
+              The Pacuare, Reventazón, and Sarapiquí Rivers are among the most popular, offering stunning jungle scenery
+              and heart-pounding rapids.
+            </p>
+            <p>
+              Most tours include professional guides, all necessary safety gear, and often a delicious riverside lunch.
+              Whether you're looking for an intense ride or a scenic float, rafting here is an unforgettable experience.
+            </p>
+            <ul>
+              <li><strong>Location:</strong> Pacuare, Reventazón, Sarapiquí, Pejibaye</li>
+              <li><strong>Best For:</strong> Adventure seekers of all skill levels</li>
+              <li><strong>Price:</strong> $65–$120 USD per person</li>
+              <li class="tour-links"><a
+                  href="https://www.viator.com/searchResults/all?text=white+water+rafting+costa+rica"
+                  target="_blank">More info & bookings</a></li>
+            </ul>
+            <div class="back-to-top btn-scroll-animate ">
+              <a href="#top-menu">↑ Back to Menu</a>
+            </div>
+          </div>
+        </article>
+        <div class="half-width-divider"></div>
+
+        <article class="artical1" id="canyoning_&_waterfall-rappelling">
+          <h2>Canyoning and Waterfall Rappelling</h2>
+          <img class="scroll-animate" src="img/tours/pop_tours/canyoning.webp" alt="Volcano Tour" class="tour-img">
+          <img class="scroll-animate1" src="img/tours/pop_tours/waterfall-rappelling.webp" alt="Volcano Tour"
+            class="tour-img">
+          <div class="info-card">
+            <p>
+              For thrill-seekers, canyoning—also known as waterfall rappelling—is an unforgettable way to explore Costa
+              Rica’s rugged terrain.
+              This activity combines hiking, climbing, and rappelling down waterfalls in deep tropical canyons.
+            </p>
+            <p>
+              Tours are typically held in adventure hubs like Arenal, Manuel Antonio, and Turrialba, where towering
+              waterfalls and thick jungle create the perfect setting.
+              No prior experience is needed—expert guides ensure everything is safe and fun.
+            </p>
+            <ul>
+              <li><strong>Location:</strong> Arenal, Manuel Antonio, Turrialba</li>
+              <li><strong>Best For:</strong> Adrenaline lovers & nature enthusiasts</li>
+              <li><strong>Price:</strong> $75–$120 USD per person</li>
+              <li class="tour-links"><a href="https://www.viator.com/searchResults/all?text=canyoning+costa+rica"
+                  target="_blank">More info & bookings</a></li>
+            </ul>
+            <div class="back-to-top btn-scroll-animate ">
+              <a href="#top-menu">↑ Back to Menu</a>
+            </div>
+          </div>
+        </article>
+        <div class="half-width-divider"></div>
+      </div>
+    </section>
+
+  <!-- Рекламный блок4 -->
+  <div class="ad-container4" id="adContainer4" >
+    <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+      <button class="close-ad-btn" id="closeAdBtn4">×</button>
+      <div class="ad-content" id="adContent4">
+        <h3 class="ad-title">Special Offer!</h3>
+        <button class="ad-action-btn" id="adActionBtn4">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+
+    <section class="content3">
+      <div class="container">
+        <article class="artical1" id="ATV_&_off-road-adventures">
+          <h2>ATV and Off-Road Adventures</h2>
+          <img class="scroll-animate" src="img/tours/pop_tours/atv1.webp" alt="Sustainable Farm Tour" class="tour-img">
+          <img class="scroll-animate1" src="img/tours/pop_tours/off-road.webp" alt="Sustainable Farm Tour"
+            class="tour-img">
+          <div class="info-card">
+            <p>
+              Costa Rica's varied terrain makes it an ideal playground for off-road enthusiasts. Whether you're steering
+              your own ATV through muddy trails or riding a 4x4 across rivers and rocky paths, these tours are all about
+              adrenaline and scenery.
+            </p>
+            <p>
+              You’ll pass through jungle trails, splash through streams, and reach panoramic viewpoints that are often
+              inaccessible by regular vehicles. Off-road tours are available in many regions, including Tamarindo, Jaco,
+              and La Fortuna.
+            </p>
+            <ul>
+              <li><strong>Location:</strong> Tamarindo, Jaco, La Fortuna</li>
+              <li><strong>Best Time:</strong> Dry season (December to April)</li>
+              <li><strong>Price:</strong> From $60 per person</li>
+              <li class="tour-links">
+                <a href="https://www.viator.com/Costa-Rica-tours/ATV-Tour/d747-tag21421" target="_blank">More info &
+                  bookings</a>
+              </li>
+            </ul>
+            <div class="back-to-top btn-scroll-animate ">
+              <a href="#top-menu">↑ Back to Menu</a>
+            </div>
+          </div>
+        </article>
+        <div class="half-width-divider"></div>
+
+        <article class="artical2" id="surfing-lessons_&_surf-camps">
+          <h2>Surfing Lessons & Surf Camps</h2>
+          <img class="scroll-animate" src="img/tours/pop_tours/surfing.webp" alt="Costa Rica National Park"
+            class="tour-img">
+          <div class="info-card">
+            <p>
+              Costa Rica is a world-class surfing destination, with consistent waves, warm water, and laid-back beach
+              towns. Whether you’re a beginner or an experienced surfer, you’ll find a perfect break to suit your level.
+            </p>
+            <p>
+              Surf schools and camps offer lessons, equipment rentals, and multi-day programs that include accommodation
+              and meals. Popular surf spots include Tamarindo, Santa Teresa, Jacó, and Dominical.
+            </p>
+            <ul>
+              <li><strong>Location:</strong> Tamarindo, Santa Teresa, Jacó, Dominical</li>
+              <li><strong>Best Time:</strong> May to October (Pacific Coast), December to March (Caribbean)</li>
+              <li><strong>Price:</strong> From $40 per lesson / From $300 for surf camp packages</li>
+              <li class="tour-links">
+                <a href="https://www.viator.com/Costa-Rica-tours/Surfing-Lessons/d747-g26051-c32014"
+                  target="_blank">More info & bookings</a>
+              </li>
+            </ul>
+
+            <div class="back-to-top btn-scroll-animate ">
+              <a class="scroll-to-menu" href="#top-menu">↑ Back to Menu</a>
+            </div>
+          </div>
+        </article>
+        <div class="half-width-divider"></div>
+
+        <article class="artical1" id="bungee-jumping_&_extreme-sports">
+          <h2>Bungee Jumping and Extreme Sports</h2>
+          <img class="scroll-animate" src="img/tours/pop_tours/bungee-jumping.webp" alt="Coffee and Chocolate Tour"
+            class="tour-img">
+          <img class="scroll-animate1" src="img/tours/pop_tours/skydiving.webp" alt="Coffee and Chocolate Tour"
+            class="tour-img">
+          <img class="scroll-animate" src="img/tours/pop_tours/paragliding.webp" alt="Coffee and Chocolate Tour"
+            class="tour-img">
+          <div class="info-card">
+            <p>If you're chasing the ultimate adrenaline rush, Costa Rica offers extreme adventures that take you to the
+              edge — and sometimes off it! Bungee jumping, skydiving, and paragliding are just a few of the
+              heart-pounding experiences available.</p>
+            <p>The bungee jump from the Old Colorado River Bridge is one of the highest in Central America, while
+              skydiving over the Pacific coast offers unbeatable views. Paragliding in the Central Valley is a favorite
+              for thrill-seekers who also want to soak in scenic beauty.</p>
+            <ul>
+              <li><strong>Location:</strong> Naranjo, Central Valley, Tamarindo</li>
+              <li><strong>Best Time:</strong> Dry season (Dec–Apr) for optimal visibility and safety</li>
+              <li><strong>Price:</strong> From $60 per activity</li>
+              <li class="tour-links">
+                <a href="https://www.viator.com/Costa-Rica-tours/Adrenaline-and-Extreme/d747-g9-c87"
+                  target="_blank">More info & bookings</a>
+              </li>
+            </ul>
+            <div class="back-to-top btn-scroll-animate ">
+              <a class="scroll-to-menu" href="#top-menu">↑ Back to Menu</a>
+            </div>
+          </div>
+        </article>
+        <div class="half-width-divider"></div>
+
+        <article class="artical2" id="scuba">
+          <h2>Scuba diving and snorkeling</h2>
+          <img class="scroll-animate" src="img/tours/pop_tours/scuba.webp" alt="Birdwatching in Costa Rica"
+            class="tour-img">
+          <img class="scroll-animate1" src="img/tours/pop_tours/snorkeling.webp" alt="Birdwatching in Costa Rica"
+            class="tour-img">
+          <div class="info-card">
+            <p>Costa Rica’s coastal waters are teeming with marine life, making them ideal for both scuba diving and
+              snorkeling. From vibrant coral reefs to volcanic rock formations, there’s plenty to explore beneath the
+              waves.</p>
+            <p>Top diving and snorkeling spots include the Catalina Islands, Caño Island, and the Gandoca-Manzanillo
+              Reserve. You can spot manta rays, sea turtles, reef sharks, and colorful schools of fish — no
+              certification required for snorkeling!</p>
+            <ul>
+              <li><strong>Location:</strong> Catalina Islands, Caño Island, Caribbean coast</li>
+              <li><strong>Best Time:</strong> Dry season (Dec–May) for best visibility</li>
+              <li><strong>Price:</strong> From $40 for snorkeling / $100 for diving tours</li>
+              <li class="tour-links">
+                <a href="https://www.viator.com/Costa-Rica-tours/Scuba-Diving/d747-g17-c28901" target="_blank">More info
+                  & bookings</a>
+              </li>
+            </ul>
+            <div class="back-to-top back-to-top-wrapper btn-scroll-animate ">
+              <a class="divers-logbook hidden-logbook" href="#">Diver’s Logbook</a>
+              <a class="scroll-to-menu" href="#top-menu">↑ Back to Menu</a>
+            </div>
+          </div>
+        </article>
+        <div class="half-width-divider"></div>
+      </div>
+    </section>
+
+    <!-- Рекламный блок5 -->
+    <div class="ad-container5" id="adContainer5">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn5">×</button>
+        <div class="ad-content" id="adContent5">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn5">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+    <!-- JavaScript for navigation - back-home -->
+    <script>
+      document.getElementById("homeButton").addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  setTimeout(() => {
+      window.location.href = "index.html";
+  }, 500); // Дадим полсекунды на плавную прокрутку
+});
+  </script>
+
+  <script src="js/script-ad.js"></script>
+  <script src="js/img_btn.js"></script>
+</body>
+
+</html>

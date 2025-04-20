@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Discover Costa Rica’s most haunting and captivating legends, including La Llorona, El Cadejo, and La Segua. Explore the mysterious world of local folklore." />
+  <meta name="author" content="Pura Vida Guide" />
+  <meta name="keywords"
+    content="Costa Rica myths, Costa Rican folklore, La Llorona, El Cadejo, La Segua, legends, ghost stories, supernatural tales, traditions, Latin American myths" />
+
+  <title>Myths & Legends - Costa Rica Guide</title>
+
+  <!-- Favicon (если есть) -->
+  <link rel="icon" href="img/index/favicon.ico" type="image/x-icon" />
+
+  <!-- Open Graph for Facebook -->
+  <meta property="og:title" content="Myths and Legends of Costa Rica" />
+  <meta property="og:description"
+    content="Discover Costa Rica’s most haunting and captivating legends, including La Llorona, El Cadejo, and La Segua." />
+  <meta property="og:image" content="https://puravidaguide.com/img/share/myths.jpg" />
+  <meta property="og:url" content="https://puravidaguide.com/myths.html" />
+  <meta property="og:type" content="article" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Myths and Legends of Costa Rica" />
+  <meta name="twitter:description"
+    content="Discover Costa Rica’s most haunting and captivating legends, including La Llorona, El Cadejo, and La Segua." />
+  <meta name="twitter:image" content="https://puravidaguide.com/img/share/myths.jpg" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles-about.css" />
+  <link rel="stylesheet" href="css/ad.css" />
+  <link rel="stylesheet" href="css/media-about.css">
+  <link rel="stylesheet" href="css/media-ad.css">
+
+  <!-- Structured Data: Website and WebPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://puravidaguide.com/#website",
+        "url": "https://puravidaguide.com/",
+        "name": "Pura Vida Guide",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Pura Vida Guide"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://puravidaguide.com/myths.html",
+        "url": "https://puravidaguide.com/myths.html",
+        "name": "Myths and Legends of Costa Rica",
+        "description": "Discover Costa Rica’s most haunting and captivating legends, including La Llorona, El Cadejo, and La Segua.",
+        "isPartOf": {
+          "@id": "https://puravidaguide.com/#website"
+        },
+        "inLanguage": "en",
+        "about": {
+          "@type": "Place",
+          "name": "Costa Rica"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+
+<body>
+  <header>
+    <h1>Myths of Costa Rica</h1>
+    <div class="logo-container">
+      <img class="logo" src="img/index/logo.webp" alt="PuraVida Guide Logo" />
+    </div>
+  </header>
+
+  <main>
+    <!-- Рекламный блок -->
+    <div class="ad-container" id="adContainer" style="display: none;">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn">×</button>
+        <div class="ad-content" id="adContent">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Рекламный блок1 -->
+    <div class="ad-container1" id="adContainer1">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn">×</button>
+        <div class="ad-content" id="adContent">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Рекламный блок2 -->
+    <div class="ad-container2" id="adContainer2">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn">×</button>
+        <div class="ad-content" id="adContent">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Рекламный блок3 -->
+    <div class="ad-container3" id="adContainer3">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn">×</button>
+        <div class="ad-content" id="adContent">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Рекламный блок4 -->
+    <div class="ad-container4" id="adContainer4" style="display: none;">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn">×</button>
+        <div class="ad-content" id="adContent">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Кнопка "Назад" -->
+    <div class="btnHome">
+      <button id="homeButton " aria-label="Back to homepage">
+        Back to Home
+      </button>
+    </div>
+
+    <section class="content">
+      <div class="container">
+        <!-- Вертикальное меню мифов -->
+        <nav class="myths-menu" id="top-menu">
+          <h2>Legends</h2>
+          <ul>
+            <li><a href="#la-llorona">La Llorona: The Cry by the River</a></li>
+            <li><a href="#el-cadejo">El Cadejo: The Secret Guardian</a></li>
+            <li><a href="#la-segua">La Segua: The Beauty with Fangs</a></li>
+            <!-- Можно добавить больше мифов позже -->
+          </ul>
+        </nav>
+
+        <!-- Контент мифов -->
+        <div class="content">
+          <section id="la-llorona" class="myth-section">
+            <h2>La Llorona: The Cry by the River</h2>
+            <div class="info-card">
+              <img loading="lazy" src="img/about/myths/maria1.png" alt="Maria" class="myth-img-left" />
+              <p>On dark nights, when the moon hides behind clouds and the wind whispers through the leaves of giant
+                trees, you can hear a chilling, piercing cry along the banks of Costa Rican rivers. It is La Llorona —
+                the Weeping Woman, a spirit condemned to eternal suffering.</p>
+              <div class="clearfix">
+                <h3>The Story of María</h3>
+                <p>Long ago, in a small village by the Tarcoles River, there lived a beautiful young woman named María.
+                  She was poor, but her beauty outshone even the brightest flowers in the tropical forest. One day, a
+                  wealthy Spanish nobleman arrived in the village — handsome, arrogant, with cold eyes. Upon seeing
+                  María, he became enchanted by her and promised to marry her if she gave him heirs.</p>
+                <p>Passionate love blinded María, and soon they had two children — a boy and a girl. But as the children
+                  grew older, the nobleman grew cold toward their mother. He announced that he would marry a noblewoman
+                  from the city, and María and her children were cast out of his home.</p>
+              </div>
+
+              <div class="clearfix">
+                <h3>The Fateful Night</h3>
+                <img loading="lazy" src="img/about/myths/maria2.png" alt="Maria by the river" class="myth-img-right" />
+                <p>In despair, María wandered the riverbank, clutching a handkerchief soaked with her tears. Her heart
+                  broke with pain: how could she, a poor peasant woman, raise her children alone? What if they starved?
+                  Better death than disgrace…</p>
+                <p>Madness overtook her. In the darkness, with the sound of the river's waters, she grabbed her children
+                  and... threw them into the black abyss. The children vanished into the whirlpool, and when María came
+                  to her senses, she realized what she had done. With a wild scream, she threw herself into the river,
+                  but death did not claim her.</p>
+              </div>
+
+              <div class="clearfix">
+                <h3>The Eternal Curse</h3>
+                <p>Since then, her spirit has never known peace. Every night, she roams the riverbanks in white clothes,
+                  soaked with her eternal tears, crying:</p>
+                <blockquote>"¡Ay, mis hijos! ¿Dónde están mis hijos?" ("Oh, my children! Where are my children?")
+                </blockquote>
+                <p>They say that if you hear her cry, you should run without looking back. Anyone who succumbs to pity
+                  and approaches her will see her face — sometimes beautiful, sometimes distorted in horror. Some even
+                  say she can drag a person into the water, mistaking them for her lost child…</p>
+
+                <h3>A Warning</h3>
+                <p>Elderly people in Costa Rica still say:</p>
+                <blockquote>"Don't go near the river at night, or La Llorona will take you."</blockquote>
+                <p>They especially warn children not to play by the water at dusk.</p>
+                <p>But sometimes, on particularly quiet nights, when even the cicadas fall silent, her sobs echo through
+                  the forest…</p>
+                <p>Would you dare to go near the river at night?</p>
+              </div>
+
+              <div class="back-to-top btn-scroll-animate">
+                <a href="#top-menu">↑ Back to Menu</a>
+              </div>
+            </div>
+          </section>
+
+          <section id="el-cadejo" class="myth-section1">
+            <h2>El Cadejo: The Secret Guardian of the Night</h2>
+            <div class="info-card">
+              <div class="clearfix">
+                <img loading="lazy" src="img/about/myths/black-dog.png" alt="White Cadejo in the forest"
+                  class="myth-img-left" />
+                <p>In the dense Costa Rican forests, where tree shadows merge into a black void and roads vanish into
+                  darkness, a mysterious creature roams—<strong>El Cadejo</strong>, a spectral hound divided between
+                  salvation and damnation.</p>
+
+                <h3>Two Hounds, Two Fates</h3>
+                <p>Legends speak of two Cadejos: one white, one black. The <strong>white Cadejo</strong>, with fur like
+                  moonlight and eyes like burning coals, protects lost travelers—especially the drunk and vulnerable.
+                  The
+                  <strong>black Cadejo</strong>, reeking of decay and with hellfire eyes, stalks sinners, luring them
+                  into
+                  the jungle's depths.
+                </p>
+              </div>
+
+              <div class="clearfix">
+                <h3>The Tale of Rafael</h3>
+                <img loading="lazy" src="img/about/myths/white-dog.png" alt="Black Cadejo lurking"
+                  class="myth-img-right" />
+                <p>In San José, a cruel drunkard named Rafael terrorized his village. One night, stumbling home, he
+                  heard
+                  ragged breathing behind him. Turning, he saw the black Cadejo—its red eyes locked onto him like a
+                  predator. Rafael ran, but the beast matched his steps. Desperate, he screamed:</p>
+                <blockquote>"¡Por favor, déjame! ¡No quiero morir!" ("Please, let me go! I don't want to die!")
+                </blockquote>
+                <p>Just as the black hound lunged, the white Cadejo erupted from the shadows. The two clashed in a fury
+                  of
+                  teeth and growls, while Rafael collapsed, unconscious.</p>
+              </div>
+
+              <div class="clearfix">
+                <h3>Redemption or Ruin</h3>
+                <p>At dawn, villagers found Rafael alive—but changed. He swore off drink and violence, forever haunted
+                  by
+                  the night the Cadejos chose his fate. Some say the white hound spared him as a warning; others whisper
+                  the black one still waits for his next misstep.</p>
+
+                <h3>A Shadow at Your Back</h3>
+                <p>To this day, Costa Ricans warn:</p>
+                <blockquote>"If you hear heavy breathing at night, don't look back. Run toward the light."</blockquote>
+                <p>Was it the white Cadejo guiding you? Or the black one, testing your soul? Only the jungle knows—and
+                  it
+                  keeps its secrets well.</p>
+                <p>Would you risk walking alone after dark?</p>
+              </div>
+
+              <div class="back-to-top btn-scroll-animate">
+                <a href="#top-menu">↑ Back to Menu</a>
+              </div>
+            </div>
+          </section>
+
+          <section id="la-segua" class="myth-section">
+            <h2>La Segua: The Beauty with Fangs</h2>
+            <div class="info-card">
+              <div class="clearfix">
+                <img loading="lazy" src="img/about/myths/segua-beautiful.png" alt="Beautiful woman in white dress"
+                  class="myth-img-left" />
+                <p>In the dark alleys of Costa Rica's old towns, where streetlights flicker like owl's eyes, a
+                  mysterious
+                  beautiful stranger sometimes appears.</p>
+
+                <h3>The Deadly Deception</h3>
+                <p>She emerges from the mist — tall, slender, wearing a white dress with thick dark hair. Her face
+                  remains
+                  shadowed, but her voice is sweet as honey.</p>
+                <blockquote>"Walk me home, handsome..." she whispers, and enchanted men always agree.</blockquote>
+                <p>But as they come closer, La Segua turns her head — revealing not a beautiful face but the horrifying
+                  visage
+                  of a horse: bloodshot eyes, sharp fangs, and a grotesque snout!</p>
+              </div>
+
+              <div class="clearfix">
+                <img loading="lazy" src="img/about/myths/segua-curse.jpg" alt="Segua's true face"
+                  class="myth-img-right" />
+                <h3>The Proud Girl's Curse</h3>
+                <p>Legend says La Segua was once an ordinary girl — beautiful but cruel. She mocked men, broke hearts,
+                  and swore
+                  no one deserved her love.</p>
+                <p>One night, a stranger in black appeared to her and asked:</p>
+                <blockquote>"So confident in your beauty? Then look in this mirror..."</blockquote>
+                <p>The girl looked — and saw her true face. From that moment, she was cursed to roam Costa Rica's roads,
+                  luring
+                  arrogant men to show them their own sins.</p>
+              </div>
+
+              <div class="clearfix">
+                <h3>How to Protect Yourself</h3>
+                <img loading="lazy" src="img/about/myths/segua-escape.png" alt="Escaping from Segua"
+                  class="myth-img-left" />
+                <p>If a beautiful stranger approaches you at night:</p>
+                <ul>
+                  <li><strong>Don't look into her eyes</strong> — her power comes from eye contact</li>
+                  <li><strong>Whisper a prayer</strong> — La Segua fears holy words</li>
+                  <li><strong>Throw salt at her feet</strong> — this may briefly stop her</li>
+                </ul>
+                <p>But the best protection? <strong>Never walk alone at night.</strong></p>
+                <blockquote>"The prettiest flowers often hide the sharpest thorns..." — Costa Rican proverb</blockquote>
+              </div>
+
+              <div class="back-to-top btn-scroll-animate">
+                <a href="#top-menu">↑ Back to Menu</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Рекламный блок5 -->
+    <div class="ad-container5" id="adContainer5">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn">×</button>
+        <div class="ad-content" id="adContent">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- JavaScript for navigation - back-home -->
+  <script>
+    document.getElementById("homeButton").addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      setTimeout(() => {
+        window.location.href = "index.html";
+      }, 500); // Дадим полсекунды на плавную прокрутку
+    });
+  </script>
+
+  <script src="js/script-ad.js"></script>
+</body>
+
+</html>

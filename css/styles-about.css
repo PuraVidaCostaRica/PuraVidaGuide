@@ -1,0 +1,774 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #007b5e;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* центрируем элементы по главной оси */
+    align-items: center;
+    /* выравниваем по вертикали */
+    position: relative;
+    /* для позиционирования логотипа */
+}
+
+.intro-section {
+    max-width: 900px;
+    margin: 0 auto 0.2rem auto;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-left: 5px solid #007b5e;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #007b5e;
+    font-weight: 500;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 1.7rem;
+}
+
+h3{
+    font-size: 1.4rem;
+}
+
+h4{
+    font-size: 1.2rem;
+}
+
+h2,
+h3,
+h4,
+.lang {
+    color: #007b5e;
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+}
+
+.logo-container {
+    position: absolute;
+    /* вырываем логотип из потока */
+    left: 1rem;
+    /* отступ справа 1rem */
+    border: 2px solid white;
+    /* Белая рамка 2px */
+    border-radius: 4px;
+    /* Закругленные углы (опционально) */
+    padding: 4px;
+    /* Отступ между рамкой и логотипом */
+    background-color: rgba(245, 241, 241, 0.479);
+}
+
+main {
+    padding: 2rem;
+}
+
+#homeButton {
+    background-color: #007b5e;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+#homeButton:hover {
+    background-color: #005f47;
+}
+
+.back-to-top {
+    text-align: right;
+    margin: 1rem 4rem 0 auto;
+    /* auto слева сместит вправо */
+    width: fit-content;
+}
+
+.back-to-top a {
+    text-decoration: none;
+    background-color: #007b5e;
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top a:hover {
+    background-color: #005f47;
+}
+
+
+/* Стили для модального окна
+________________________________________________________ */
+.modal {
+    display: none;
+    /* Скрыто по умолчанию */
+    position: fixed;
+    /* Поверх всего */
+    z-index: 1000;
+    /* Поверх других элементов */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Полупрозрачный черный фон */
+    text-align: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 5vh;
+    /* Отступ сверху */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.clickable-image {
+    cursor: zoom-in;
+    /* Курсор "лупа" при наведении */
+    transition: transform 0.2s;
+}
+
+.clickable-image:hover {
+    transform: scale(1.02);
+    /* Легкое увеличение при наведении */
+}
+
+/*____________________стили для модального окна end*/
+
+.content,
+.content1,
+.content2,
+.content3 {
+    max-width: 65vw;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content strong {
+    color: #007b5e;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 2rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 0.95rem;
+}
+
+.table thead {
+    background-color: #007b5e;
+    color: white;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.info-card {
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    border-left: 5px solid #007b5e;
+    padding-left: 5px;
+}
+
+.link {
+    color: #007b5e;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: #005f48;
+    text-decoration: underline;
+}
+
+/*government
+________________________________________________*/
+.symbol-card {
+    display: flex;
+    /* Делаем flex-контейнер */
+    align-items: center;
+    /* Выравниваем элементы по вертикали */
+    gap: 20px;
+    /* Отступ между картинкой и текстом */
+    margin-bottom: 20px;
+    /* Отступ снизу для разделения карточек */
+}
+
+.image-gov {
+    width: 150px;
+    /* Фиксированная ширина картинки */
+    height: auto;
+    /* Сохраняем пропорции */
+    object-fit: contain;
+    /* Гарантируем, что изображение полностью помещается */
+}
+
+.symbol-card h3 {
+    margin-top: 0;
+    /* Убираем отступ сверху у заголовка */
+    margin-bottom: 10px;
+    /* Отступ снизу у заголовка */
+}
+
+.symbol-card p {
+    margin: 0;
+    /* Убираем отступы у параграфа */
+    flex: 1;
+    /* Текст занимает всё оставшееся пространство */
+}
+
+.image-gov {
+    max-width: 150px;
+    margin: 0.5 rem 0;
+}
+
+/* Стили для карточки с гимном и прицей */
+.anthem-card,
+.bird-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.anthem-card .symbol-card,
+.bird-card .symbol-card {
+    margin-bottom: 0;
+}
+
+.audio-player {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+    background: #f5f5f5;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.play-btn,
+.pause-btn {
+    background: #007b5e;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.play-btn:hover,
+.pause-btn:hover {
+    background: #005f47;
+}
+
+.player-time {
+    font-size: 14px;
+    color: #666;
+}
+
+/*embassies
+_____________________________________________*/
+.emergency {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.flag-icon {
+    width: 24px;
+    height: auto;
+    margin-right: 8px;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+
+/*time
+___________________________________________________________*/
+.time-now {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: #f4f4f4;
+}
+
+.day-now {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+#costaRicaTime {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007b5e;
+    margin: 1rem 0;
+}
+
+.time-zone {
+    flex: 1;
+    min-width: 250px;
+}
+
+.text-with-image {
+    display: flex;
+    /* Включаем Flexbox */
+    align-items: center;
+    /* Выравниваем по вертикали */
+    gap: 1rem;
+    /* Отступ между текстом и картинкой */
+}
+
+.img-costa-rica-dictionary {
+    max-width: 250px;
+    /* Ограничиваем ширину картинки */
+    height: auto;
+    /* Сохраняем пропорции */
+    border-radius: 4px;
+    /* Закругленные углы (опционально) */
+    margin-left: 50px;
+}
+
+/*currency
+____________________________________*/
+.currency-info-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: top;
+}
+
+.currency-info-card-discripton {
+    flex: 1;
+    min-width: 250px;
+}
+
+.converter-btn {
+    background-color: #007b5e;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.bancnotes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.common-bannotes {
+    flex: 1;
+    min-width: 250px;
+}
+
+.money1,
+.money2 {
+    width: 100%;
+    max-width: 120px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content-money {
+    width: 250px;
+    height: auto;
+}
+
+.money-discription {
+    margin-top: 0.5rem;
+}
+
+/*exchange
+__________________________________________________________*/
+.currency,
+.currency-converter {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+}
+
+.currency-converter {
+    background-color: #f8f9fa;
+}
+
+.converter-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.converter-column {
+    min-width: 150px;
+    margin: 0.5rem;
+}
+
+.converter-label {
+    display: block;
+    margin: 0.5rem;
+    font-weight: bold;
+    color: #007b5e;
+}
+
+.converter-input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.converter-select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+.converter-button {
+    background-color: #007b5e;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.converter-button:hover {
+    background-color: #005f48;
+}
+
+.result-box {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    border-left: 5px solid #007b5e;
+}
+
+.exchange-rate-info {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+}
+
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0, 123, 94, 0.3);
+    border-radius: 50%;
+    border-top-color: #007b5e;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*geography
+_________________________________________*/
+.CR-map {
+    float: left;
+    margin-right: 15px;
+    width: 300px;
+    height: auto;
+}
+
+/*history
+_________________________________________*/
+.history-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-right {
+    float: right;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    max-width: 300px;
+}
+
+.img-left {
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    max-width: 300px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.history-section {
+    margin-bottom: 3rem;
+}
+
+.myths-button-container {
+    text-align: center;
+    margin: 0.2rem;
+}
+
+.myths-button {
+    background-color: #007b5e;
+    color: white;
+    padding: 0.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.myths-button:hover {
+    background-color: #005f48;
+}
+
+.arrow {
+    margin-left: 0.5rem;
+    font-size: 24px;
+}
+
+
+/*myths
+__________________________________________________-*/
+.myths-menu {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid #007b5e;
+    top: 20px;
+    align-self: flex-start;
+}
+
+.myths-menu h2 {
+    color: #007b5e;
+    margin-top: 0;
+}
+
+.myths-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.myths-menu li {
+    margin-bottom: 1rem;
+}
+
+.myths-menu a {
+    color: #007b5e;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.myths-menu a:hover {
+    color: #007b5e;
+    background-color: #e9f5f2;
+}
+
+.myth-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.myth-img-right {
+    float: right;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    max-width: 300px;
+}
+
+.myth-img-left {
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    max-width: 300px;
+}
+
+.myth-clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.myth-section1 {
+    background-color: #f8f9fa;
+}
+
+/*culture
+___________________________________________*/
+
+.text-with-image-culture {
+    max-width: 200px;
+    /* Ограничиваем ширину картинки */
+    height: auto;
+    /* Сохраняем пропорции */
+    border-radius: 4px;
+    /* Закругленные углы (опционально) */
+    margin-left: 50px;
+}
+
+/*cuisine
+___________________________________________*/
+.image-cuisine {
+    margin: 0.5 rem 0;
+    max-width: 100%;
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.must-try {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .must-try img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .image-frut{
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 5%;
+  }
+  
+  .last-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+    grid-column: span 2;
+  }
+  
+  .must-try-text {
+    flex: 1;
+    display: flex;
+    padding-top: 100px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .must-try-text h4 {
+    margin-top: 0;
+  }
+
+  .symbol-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block; /* или block — зависит от контекста */
+  }
+
+  .symbol-link:hover {
+    cursor: pointer;
+  }
+
+  .artical2 {
+    background-color: #f8f9fa;
+}
+
+.highlighted{
+    color: #007b5e;
+}
+
+/*biodiversity
+____________________________________________*/

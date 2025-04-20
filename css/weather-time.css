@@ -1,0 +1,160 @@
+
+/* Time Widget */
+.time-widget {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px 15px;
+    z-index: 10;
+    box-shadow: 0 10px 25px #8B5E3C;
+    font-family: Arial, sans-serif;
+}
+
+.time-title {
+    font-size: 1em;
+    font-weight: 600;
+    color:  #8B5E3C;
+    margin-bottom: 3px;
+}
+
+.time-value,
+.day-value {
+    font-size: 18px;
+    font-weight: bold;
+    color:  #8B5E3C;
+}
+
+/* Weather Widget */
+.weather-container {
+    position: absolute;
+    bottom: -1px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+    z-index: 10;
+}
+
+.weather-box {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    box-shadow: 0 10px 25px #8B5E3C;
+    transition: transform 0.3s;
+    color:  #8B5E3C;
+}
+
+.weather-box:hover {
+    transform: translateY(-5px);
+}
+
+.weather-location {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1em;
+    font-weight: 600; 
+}
+
+.weather-temp {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.weather-desc {
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.weather-humidity {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-humidity::before {
+    content: "💧";
+    margin-right: 5px;
+    font-size: 0.8rem;
+}
+
+.weather-loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(0,0,0,.1);
+    border-radius: 50%;
+    border-top-color: #2c3e50;
+    animation: spin 1s ease-in-out infinite;
+}
+
+.weather-icon {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.weather-updated{
+    margin-top: 2px;
+    font-size: 0.4rem;
+}
+
+/* Цветные иконки для разных состояний */
+.weather-icon .fa-sun { color: #FFD700; } /* Ясно - золотой */
+.weather-icon .fa-cloud-sun { background: linear-gradient(135deg, #FFD700, #1E90FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; } /* Ясно - золотой */
+.weather-icon .fa-moon { color: #8b8b87; } /* Ночь - серебристый */
+.weather-icon .fa-cloud { color: #0e3a74; } /* Облачно - голубой */
+.weather-icon .fa-cloud-rain { color: #1E90FF; } /* Дождь - синий */
+.weather-icon .fa-cloud-moon { background: linear-gradient(45deg,  #360774, #8b8b87);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent } /* Дождь - синий */
+.weather-icon .fa-bolt { color: #f78809; } /* Гроза - оранжевый */
+.weather-icon .fa-snowflake { color: #4ae6e6; } /* Снег - голубой */
+.weather-icon .fa-smog { color: #615e5e; } /* Туман - серый */
+
+.fa-spin {
+    animation: fa-spin 2s infinite linear;
+}
+
+@keyframes fa-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+    .time-widget {
+        top: 10px;
+        left: 10px;
+        padding: 8px 12px;
+    }
+    
+    .time-title {
+        font-size: 10px;
+    }
+    
+    .time-value {
+        font-size: 16px;
+    }
+    
+    .weather-container {
+        bottom: 10px;
+        right: 10px;
+        gap: 10px;
+    }
+    
+    .weather-box {
+        width: 100px;
+        padding: 8px;
+    }
+}

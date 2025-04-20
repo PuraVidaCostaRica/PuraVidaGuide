@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currency and Converter - Costa Rica Guide</title>
+  <meta name="description" content="Learn about Costa Rican currency and use our handy converter to check current exchange rates." />
+  <meta name="keywords" content="Costa Rica, currency, exchange rates, CRC, Costa Rican colon, currency converter" />
+  <meta name="author" content="PuraVida Guide Team" />
+  <link rel="canonical" href="https://www.puravidaguide.com/about/currency.html" />
+
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="Costa Rican Currency and Converter - PuraVida Guide" />
+  <meta property="og:description" content="Explore Costa Rican banknotes and use our built-in currency converter. Updated info for travelers." />
+  <meta property="og:image" content="https://www.puravidaguide.com/img/about/money/og-currency.jpg" />
+  <meta property="og:url" content="https://www.puravidaguide.com/about/currency.html" />
+  <meta property="og:type" content="article" />
+
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Costa Rican Currency and Converter - PuraVida Guide" />
+  <meta name="twitter:description" content="Use our quick converter and explore banknotes used in Costa Rica." />
+  <meta name="twitter:image" content="https://www.puravidaguide.com/img/about/money/og-currency.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/index/favicon.ico" type="image/x-icon" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Currency and Converter - PuraVida Guide",
+    "url": "https://www.puravidaguide.com/about/currency.html",
+    "description": "Learn about Costa Rican currency and convert between CRC and major world currencies.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "PuraVida Guide"
+    }
+  }
+  </script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles-about.css" />
+  <link rel="stylesheet" href="css/ad.css" />
+  <link rel="stylesheet" href="css/media-about.css" />
+  <link rel="stylesheet" href="css/media-ad.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <h1>Currency and Currency Converter</h1>
+    <div class="logo-container">
+      <img class="logo" src="img/index/logo.webp" alt="PuraVida Guide Logo" />
+    </div>
+  </header>
+  <main>
+
+    <!-- Рекламный блок -->
+    <div class="ad-container" id="adContainer" style="display: none;">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn">×</button>
+        <div class="ad-content" id="adContent">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Рекламный блок1 -->
+    <div class="ad-container1" id="adContainer1">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn1">×</button>
+        <div class="ad-content" id="adContent1">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn1">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Рекламный блок2 -->
+    <div class="ad-container2" id="adContainer2">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn2">×</button>
+        <div class="ad-content" id="adContent2">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn2">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Рекламный блок3 -->
+    <div class="ad-container3" id="adContainer3">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn3">×</button>
+        <div class="ad-content" id="adContent3">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn3">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Рекламный блок4 -->
+    <div class="ad-container4" id="adContainer4" style="display: none;">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn4">×</button>
+        <div class="ad-content" id="adContent4">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn4">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Кнопка "Назад" -->
+    <div class="btnHome">
+      <button id="homeButton" aria-label="Back to homepage">
+        Back to Home
+      </button>
+    </div>
+
+    <button class="converter-btn" onclick="window.location.href='exchange.html'">
+      Open Currency Converter
+    </button>
+
+    <section class="content">
+      <div>
+        <h2>Currency</h2>
+        <div class="currency-info">
+          <div class="info-card">
+            <div class="currency-info-card">
+              <div class="currency-info-card-discripton">
+                <h3>Costa Rican Colón (₡)</h3>
+                <p><strong>Currency code:</strong> CRC</p>
+                <p><strong>Exchange rate (approx):</strong><br>
+                  $1 USD ≈ ₡530-560<br>
+                  $1 CAD ≈ ₡340-370<br>
+                  €1 EUR ≈ ₡580-620<br>
+                  £1 GBP ≈ ₡680-720</p>
+
+                <button class="converter-btn" onclick="window.location.href='exchange.html'">
+                  Open Currency Converter
+                </button>
+              </div>
+
+              <div class="common-bannotes">
+                <h4>Common Banknotes:</h4>
+                <div class="bancnotes">
+                  <!-- Банкнота 1000 колон -->
+                  <div style="text-align: center;">
+                    <img class=" money1 clickable-image" role="button" src="img/about/money/1mil1.webp"
+                      onclick="openModal(this)" alt="Front side of 1000 CRC banknote">
+
+                    <img class="money2 clickable-image" role="button" src="img/about/money/1mil2.webp"
+                      onclick="openModal(this)" alt="Back side of 1000 CRC banknote">
+
+                    <p class="money-discription">₡1,000</p>
+                  </div>
+
+                  <!-- Банкнота 2000 колон -->
+                  <div style="text-align: center;">
+
+                    <img class=" money1 clickable-image" role="button" src="img/about/money/2mil1.webp"
+                      onclick="openModal(this)" alt="Front side of 2000 CRC banknote">
+
+                    <img class="money2 clickable-image" role="button" src="img/about/money/2mil2.webp"
+                      onclick="openModal(this)" alt="Back side of 2000 CRC banknote">
+
+                    <p class="money-discription">₡2,000</p>
+                  </div>
+
+                  <!-- Банкнота 5000 колон -->
+                  <div style="text-align: center;">
+
+                    <img class=" money1 clickable-image" role="button" src="img/about/money/5mil1.webp"
+                      onclick="openModal(this)" alt="Front side of 5000 CRC banknote">
+
+                    <img class="money2 clickable-image" role="button" src="img/about/money/5mil2.webp"
+                      onclick="openModal(this)" alt="Back side of 5000 CRC banknote">
+
+                    <p class="money-discription">₡5,000</p>
+                  </div>
+
+                  <!-- Банкнота 10000 колон -->
+                  <div style="text-align: center;">
+
+                    <img class=" money1 clickable-image" role="button" src="img/about/money/10mil1.webp"
+                      onclick="openModal(this)" alt="Front side of 10000 CRC banknote">
+
+                    <img class="money2 clickable-image" role="button" src="img/about/money/10mil2.webp"
+                      onclick="openModal(this)" alt="Back side of 10000 CRC banknote">
+
+                    <p class="money-discription">₡10,000</p>
+                  </div>
+
+                  <!-- Банкнота 20000 колон -->
+                  <div style="text-align: center;">
+
+                    <img class=" money1 clickable-image" role="button" src="img/about/money/20mil1.webp"
+                      onclick="openModal(this)" alt="Front side of 20000 CRC banknote">
+
+                    <img class="money2 clickable-image" role="button" src="img/about/money/20mil2.webp"
+                      onclick="openModal(this)" alt="Back side of 20000 CRC banknote">
+
+                    <p class="money-discription">₡20,000</p>
+                  </div>
+
+                  <!-- Банкнота 50000 колон -->
+                  <div style="text-align: center;">
+
+                    <img class=" money1 clickable-image" role="button" src="img/about/money/50mil1.webp"
+                      onclick="openModal(this)" alt="Front side of 50000 CRC banknote">
+
+                    <img class="money2 clickable-image" role="button" src="img/about/money/50mil2.webp"
+                      onclick="openModal(this)" alt="Back side of 50000 CRC banknote">
+
+                    <p class="money-discription">₡50,000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3>Money Tips</h3>
+            <ul>
+              <li>US dollars are widely accepted in tourist areas, but you'll usually receive change in colones </li>
+              <li>Credit cards (Visa/Mastercard) are accepted in most establishments</li>
+              <li>ATMs ("cajeros automáticos") are widely available</li>
+              <li>Smaller denominations are helpful for taxis and small purchases</li>
+              <li>Always check exchange rates and count your change carefully</li>
+            </ul>
+          </div>
+
+          <div class="table-wrapper">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Payment Method</th>
+                  <th>Where Accepted</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cash (Colones)</td>
+                  <td>Everywhere</td>
+                  <td>Essential for small purchases, markets, rural areas</td>
+                </tr>
+                <tr>
+                  <td>US Dollars</td>
+                  <td>Tourist areas, hotels, some shops</td>
+                  <td>Often given poor exchange rates</td>
+                </tr>
+                <tr>
+                  <td>Credit Cards</td>
+                  <td>Hotels, restaurants, larger stores</td>
+                  <td>Visa/Mastercard most widely accepted</td>
+                </tr>
+                <tr>
+                  <td>Traveler's Checks</td>
+                  <td>Banks, some hotels</td>
+                  <td>Becoming less commonly accepted</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <h2>Currency Exchange Tips</h2>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Tip</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Best Exchange Rates</td>
+                <td>Banks typically offer better rates than hotels or airport exchanges</td>
+              </tr>
+              <tr>
+                <td>ATM Withdrawals</td>
+                <td>Using ATMs often gives good rates, but check your bank's foreign transaction fees</td>
+              </tr>
+              <tr>
+                <td>Credit Cards</td>
+                <td>Widely accepted in tourist areas, but inform your bank of travel plans</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </section>
+
+    <!-- Рекламный блок5 -->
+    <div class="ad-container5" id="adContainer5">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn5">×</button>
+        <div class="ad-content" id="adContent5">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn5">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Один на всю страницу -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content-money" id="modalImage">
+    </div>
+
+  </main>
+
+
+
+  <!-- JavaScript for navigation - back-home -->
+  <script>
+    document.getElementById("homeButton").addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      setTimeout(() => {
+        window.location.href = "index.html";
+      }, 500); // Дадим полсекунды на плавную прокрутку
+    });
+  </script>
+
+  <script src="js/script-ad.js"></script>
+  <script src="js/exchange.js"></script>
+  <script src="js/script-img_zoom.js"></script>
+</body>
+
+</html>

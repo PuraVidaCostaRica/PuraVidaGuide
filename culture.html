@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Discover the heart of Costa Rica through its warm people, rich cultural traditions, colorful festivals, and pura vida lifestyle." />
+  <meta name="author" content="Pura Vida Guide" />
+  <meta name="keywords"
+    content="Costa Rica, culture, people, traditions, holidays, pura vida, lifestyle, festivals, customs, history" />
+
+  <title>Culture and People - Costa Rica Guide</title>
+
+  <link rel="icon" href="img/index/favicon.ico" type="image/x-icon" />
+
+  <!-- Open Graph for Facebook -->
+  <meta property="og:title" content="Culture and People of Costa Rica" />
+  <meta property="og:description" content="Discover the heart of Costa Rica through its warm people, rich cultural traditions, colorful festivals, and pura vida lifestyle." />
+  <meta property="og:image" content="https://puravidaguide.com/img/share/culture.jpg" />
+  <meta property="og:url" content="https://puravidaguide.com/culture.html" />
+  <meta property="og:type" content="article" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Culture and People of Costa Rica" />
+  <meta name="twitter:description" content="Discover the heart of Costa Rica through its warm people, rich cultural traditions, colorful festivals, and pura vida lifestyle." />
+  <meta name="twitter:image" content="https://puravidaguide.com/img/share/culture.jpg" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles-about.css" />
+  <link rel="stylesheet" href="css/ad.css" />
+  <link rel="stylesheet" href="css/media-about.css">
+  <link rel="stylesheet" href="css/media-ad.css">
+
+  <!-- Structured Data: Website and WebPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://puravidaguide.com/#website",
+        "url": "https://puravidaguide.com/",
+        "name": "Pura Vida Guide",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Pura Vida Guide"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://puravidaguide.com/culture.html",
+        "url": "https://puravidaguide.com/culture.html",
+        "name": "Culture and People of Costa Rica",
+        "description": "Discover the heart of Costa Rica through its warm people, rich cultural traditions, colorful festivals, and pura vida lifestyle.",
+        "isPartOf": {
+          "@id": "https://puravidaguide.com/#website"
+        },
+        "inLanguage": "en",
+        "about": {
+          "@type": "Place",
+          "name": "Costa Rica"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>Culture and People</h1>
+    <div class="logo-container">
+      <img class="logo" src="img/index/logo.webp" alt="PuraVida Guide Logo" />
+    </div>
+  </header>
+  
+  <main>
+
+      <!-- Рекламный блок -->
+      <div class="ad-container" id="adContainer" style="display: none;">
+        <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+          <button class="close-ad-btn" id="closeAdBtn">×</button>
+          <div class="ad-content" id="adContent">
+            <h3 class="ad-title">Special Offer!</h3>
+            <button class="ad-action-btn" id="adActionBtn">Learn More</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Рекламный блок1 -->
+      <div class="ad-container1" id="adContainer1">
+        <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+          <button class="close-ad-btn" id="closeAdBtn1">×</button>
+          <div class="ad-content" id="adContent1">
+            <h3 class="ad-title">Special Offer!</h3>
+            <button class="ad-action-btn" id="adActionBtn1">Learn More</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Рекламный блок2 -->
+      <div class="ad-container2" id="adContainer2">
+        <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+          <button class="close-ad-btn" id="closeAdBtn2">×</button>
+          <div class="ad-content" id="adContent2">
+            <h3 class="ad-title">Special Offer!</h3>
+            <button class="ad-action-btn" id="adActionBtn2">Learn More</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Рекламный блок3 -->
+      <div class="ad-container3" id="adContainer3">
+        <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+          <button class="close-ad-btn" id="closeAdBtn3">×</button>
+          <div class="ad-content" id="adContent3">
+            <h3 class="ad-title">Special Offer!</h3>
+            <button class="ad-action-btn" id="adActionBtn3">Learn More</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Рекламный блок4 -->
+      <div class="ad-container4" id="adContainer4" style="display: none;">
+        <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+          <button class="close-ad-btn" id="closeAdBtn4">×</button>
+          <div class="ad-content" id="adContent4">
+            <h3 class="ad-title">Special Offer!</h3>
+            <button class="ad-action-btn" id="adActionBtn4">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+    <!-- Кнопка "Назад" -->
+    <div class="btnHome">
+      <button id="homeButton" aria-label="Back to homepage">
+        Back to Home
+      </button>
+    </div>
+    
+    <section class="content">
+      <div class="text-with-image image-float-left">
+        <img  class="text-with-image-culture" src="img/about/ILiveInCR.webp"
+          alt="Costa Rican culture">
+        <!-- Модальное окно (изначально скрыто) -->
+        <div id="imageModal" class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img class="modal-content" id="modalImage">
+        </div>
+        <div>
+          <p><strong>Costa Rica's culture</strong> is a vibrant blend of Indigenous heritage, Spanish colonial
+            influence, and modern democratic values. The people of Costa Rica, known as <strong>"Ticos"</strong> (and
+            <strong>"Ticas"</strong> for women), are famously friendly, welcoming, and proud of their peaceful nation.
+          </p>
+
+          <p>The phrase <strong>"Pura Vida"</strong> — which translates to "pure life" — is much more than a slogan.
+            It’s a way of life that reflects optimism, gratitude, and a laid-back attitude. You’ll hear it used as a
+            greeting, a farewell, or just an expression of joy.</p>
+
+          <p><strong>Spanish</strong> is the official language, though <strong>English</strong> is widely spoken in
+            tourist areas. Costa Rica is a predominantly <strong>Catholic</strong> country, but religious freedom is
+            protected and respected.</p>
+
+          <p><strong>Family</strong> is a central part of Tico culture, and communities are tightly knit. Traditional
+            music, folk dances, and national holidays — such as <strong>Independence Day (September 15)</strong> — play
+            an important role in daily life.</p>
+
+          <p><strong>Education and healthcare</strong> are highly valued, and Costa Rica has one of the highest literacy
+            rates in Latin America. The country abolished its army in <strong>1948</strong>, choosing instead to invest
+            in peace, education, and environmental protection.</p>
+        </div>
+      </div>
+
+
+      <h2 >Public Holidays and Cultural Festivals</h2>
+      <div class="table-wrapper">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Holiday / Festival</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="color: red;">
+              <td>January 1</td>
+              <td>New Year's Day</td>
+              <td>Official public holiday. Families gather, beaches are crowded, and celebrations continue from the
+                night before.</td>
+            </tr>
+            <tr>
+              <td>February 14</td>
+              <td>Valentine’s Day</td>
+              <td>Not a public holiday, but widely celebrated with gifts, dinners, and music events.</td>
+            </tr>
+            <tr>
+              <td>March/April</td>
+              <td>Holy Week (Semana Santa)</td>
+              <td>Important religious week. Most businesses close on Thursday and Friday (public holidays).</td>
+            </tr>
+            <tr>
+              <td>April 11</td>
+              <td>Juan Santamaría Day</td>
+              <td>National hero celebration with parades, especially in Alajuela.</td>
+            </tr>
+            <tr style="color: red;">
+              <td>May 1</td>
+              <td>Labor Day</td>
+              <td>Public holiday honoring workers. Political rallies and family picnics are common.</td>
+            </tr>
+            <tr>
+              <td>June (varies)</td>
+              <td>Corpus Christi</td>
+              <td>Religious observance in some areas, particularly in Cartago.</td>
+            </tr>
+            <tr>
+              <td>July 25</td>
+              <td>Annexation of Guanacaste</td>
+              <td>Regional and national pride celebrated with parades and cultural events.</td>
+            </tr>
+            <tr style="color: red;">
+              <td>August 2</td>
+              <td>Virgin of Los Ángeles Day</td>
+              <td>Major pilgrimage to Cartago. National holiday.</td>
+            </tr>
+            <tr>
+              <td>August 15</td>
+              <td>Mother’s Day</td>
+              <td>Big family celebration in Costa Rica. Businesses often close, but it’s not an official public holiday.
+              </td>
+            </tr>
+            <tr style="color: red;">
+              <td>September 15</td>
+              <td>Independence Day</td>
+              <td>Patriotic holiday with lantern parades, traditional costumes, and fireworks. Public holiday.</td>
+            </tr>
+            <tr>
+              <td>October 12</td>
+              <td>Cultures Day</td>
+              <td>Celebrates the multicultural heritage of Costa Rica, especially Afro-Caribbean communities.</td>
+            </tr>
+            <tr style="color: red;">
+              <td>December 25</td>
+              <td>Christmas Day</td>
+              <td>Public holiday. Celebrated with family gatherings and traditional Costa Rican meals.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Рекламный блок5 -->
+    <div class="ad-container5" id="adContainer5">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn5">×</button>
+        <div class="ad-content" id="adConten5">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn5">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+    <!-- JavaScript for navigation - back-home -->
+    <script>
+      document.getElementById("homeButton").addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  setTimeout(() => {
+      window.location.href = "index.html";
+  }, 500); // Дадим полсекунды на плавную прокрутку
+});
+  </script>
+
+  <script src="js/script-ad.js"></script>
+</body>
+
+</html>

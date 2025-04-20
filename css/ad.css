@@ -1,0 +1,170 @@
+.ad-container {
+  display: none;
+    position: fixed;
+    left: 0;
+    top: 60vh;
+    transform: translateY(-50%);
+    width: 10vw;
+    height: 25vh;
+    background: url('../img/index/sloth-volcano.webp') center/cover;
+    z-index: 100;
+    border-radius: 0 8px 8px 0;
+    border: 1px white solid;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.ad-container1,
+.ad-container2{
+  display: none;
+    position: fixed;
+    transform: translateY(-50%);
+    width: 10vw;
+    height: 25vh;
+    z-index: 100;
+    border-radius: 0 8px 8px 0;
+    border: 1px white solid;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.ad-container1 {
+    left: 20px;
+    top: 80vh;
+    background: url('../img/index/sloth-volcano.webp') center/cover;
+}
+
+.ad-container2 {
+    right: 20px;
+    top: 40vh;
+    background: url('../img/index/sloth-volcano.webp') center/cover;
+}
+
+.ad-container3 {
+    background: url('../img/index/sloth-volcano.webp') center/cover;
+}
+
+.ad-container3,
+.ad-container4,
+.ad-container5 {
+  display: none;
+    position: relative;
+    width: 60%;
+    height: 25vh;
+    z-index: 100;
+    border-radius:  8px;
+    border: 1px white solid;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    align-self: center;
+    margin: 1rem auto 1rem auto;
+  }
+  
+  .ad-container4 {
+    background: url('../img/index/sloth-volcano.webp') center/cover;
+  }
+
+  .ad-container5 {
+    background: url('../img/index/sloth-volcano.webp') center/cover;
+  }
+  
+.ad-inner-wrapper {
+    position: relative;
+    /* Теперь кнопка привязывается сюда */
+    width: 100%;
+    height: 100%;
+    border-radius: 0 8px 8px 0;
+    overflow: hidden;
+}
+
+.ad-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    color: white;
+    border:none;
+}
+
+.ad-title {
+    margin: 0;
+    font-size: 1.2vw;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.close-ad-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ad-action-btn {
+    background: #f3bf80;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: #8B5E3C;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 0.8vw;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.ad-action-btn:hover {
+    background: #f1b277;
+    transform: scale(1.05);
+}
+
+/* Когда реклама скрыта */
+body.ad-closed .ad-container {
+    display: none;
+}
+
+body.ad-closed .menu-grid {
+    margin-left: 0;
+}
+
+/* Когда реклама скрыта1 */
+body.ad-closed1 .ad-container1 {
+    display: none;
+  }
+  
+    /* Когда реклама скрыта2 */
+    body.ad-closed2 .ad-container2 {
+      display: none;
+    }
+      
+    /* Когда реклама скрыта3 */
+    body.ad-closed3 .ad-container3 {
+      display: none;
+    }
+  
+    /* Когда реклама скрыта4 */
+    body.ad-closed4 .ad-container4 {
+      display: none;
+    }
+  
+     /* Когда реклама скрыта5 */
+     body.ad-closed5 .ad-container5 {
+      display: none;
+    }
+  

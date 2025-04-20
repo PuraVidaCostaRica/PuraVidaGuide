@@ -1,0 +1,103 @@
+ /* Адаптация для планшетов ( 1024px) 
+ ______________________________________________________*/
+
+ @media (max-width: 1024px) {
+     .overlay h1 {
+         font-size: 4rem;
+     }
+
+     .overlay p {
+         font-size: 1.5rem;
+     }
+
+     .menu-grid{
+        margin-left: 15vw;
+     }
+
+     .menu-item {
+         height: 2.5rem;
+     }
+ }
+
+
+ /* Адаптация для мобильных (до 900px) 
+ ______________________________________________________*/
+ @media (max-width: 900px) {
+    .overlay {
+       margin-top: -5rem;
+    }
+    
+    .menu-grid{
+        margin-left: 20vw;
+     }
+     .menu-item {
+         font-size: 1rem;
+         max-height: 10vh;
+     }
+
+     .modal {
+         width: 95%;
+         padding: 5px;
+     }
+
+     .modal-title {
+         font-size: 1.5rem;
+     }
+
+     .modal-btn {
+         padding: 10px;
+         font-size: 1rem;
+     }
+
+     .modal-buttons {
+         grid-template-columns: 1fr;
+     }
+
+     .modal-content {
+         overflow-x: auto;
+         /* Скролл для контента */
+         overflow-y: auto;
+         max-height: 70vh;
+         /* Высота контента меньше высоты модалки */
+         padding: 20px;
+     }
+ }
+
+
+
+ /* Адаптация для мобильных (до768px)
+ _______________________________________________ */
+ @media (max-width: 768px) {
+
+     .overlay h1 {
+         font-size: 3rem;
+         margin-top: 0;
+     }
+
+     .overlay p {
+         font-size: 1.2rem;
+     }
+
+     .menu-grid {
+         grid-template-columns: 1fr;
+         grid-template-rows: repeat(4, 1fr);
+         height: auto;
+         max-height: 40vh;
+         margin-left: 0;
+         padding: 0;
+         gap: 3px;
+         padding-bottom: 2vh;
+     }
+
+     footer {
+         height: 2rem;
+     }
+
+     .logo-footer{
+        margin-bottom: 0.3rem;
+     }
+
+     .logo-footer img{
+        height: 3rem;
+     }
+ }

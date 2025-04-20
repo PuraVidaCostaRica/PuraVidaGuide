@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time & Language - Costa Rica Guide</title>
+    <meta name="description"
+        content="Discover Costa Rica's time zone, business hours, languages, and currency. Essential info for planning your trip!" />
+    <meta name="keywords"
+        content="Costa Rica time, Costa Rica language, Costa Rica currency, Costa Rica travel tips, Costa Rica guide" />
+    <meta name="author" content="Costa Rica Guide" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Time, Language & Currency - Costa Rica Guide" />
+    <meta property="og:description"
+        content="Plan your Costa Rica trip with info on local time, languages, and currency." />
+    <meta property="og:image" content="https://example.com/img/index/logo.webp" />
+    <meta property="og:url" content="https://example.com/time.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Costa Rica: Time, Language & Currency" />
+    <meta name="twitter:description"
+        content="Useful travel tips about Costa Rica's time zone, local phrases, and money." />
+    <meta name="twitter:image" content="https://example.com/img/index/logo.webp" />
+
+    <!-- Structured Data: WebPage -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Time, Language & Currency - Costa Rica Guide",
+        "description": "Get accurate info on time, languages, and currency in Costa Rica. Great for travelers and digital nomads.",
+        "url": "https://example.com/time.html"
+      }
+    </script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles-about.css" />
+    <link rel="stylesheet" href="css/ad.css" />
+    <link rel="stylesheet" href="css/media-about.css" />
+    <link rel="stylesheet" href="css/media-ad.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/index/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <header>
+        <h1>Time and Language</h1>
+        <div class="logo-container">
+            <img class="logo" src="img/index/logo.webp" alt="PuraVida Guide Logo" />
+          </div>
+    </header>
+
+    <main>
+        <!-- Рекламный блок -->
+        <div class="ad-container" id="adContainer" style="display: none;">
+            <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+                <button class="close-ad-btn" id="closeAdBtn">×</button>
+                <div class="ad-content" id="adContent">
+                    <h3 class="ad-title">Special Offer!</h3>
+                    <button class="ad-action-btn" id="adActionBtn">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Рекламный блок1 -->
+        <div class="ad-container1" id="adContainer1">
+            <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+                <button class="close-ad-btn" id="closeAdBtn1">×</button>
+                <div class="ad-content" id="adContent1">
+                    <h3 class="ad-title">Special Offer!</h3>
+                    <button class="ad-action-btn" id="adActionBtn1">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Рекламный блок2 -->
+        <div class="ad-container2" id="adContainer2">
+            <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+                <button class="close-ad-btn" id="closeAdBtn2">×</button>
+                <div class="ad-content" id="adContent2">
+                    <h3 class="ad-title">Special Offer!</h3>
+                    <button class="ad-action-btn" id="adActionBtn2">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Рекламный блок3 -->
+        <div class="ad-container3" id="adContainer3">
+            <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+                <button class="close-ad-btn" id="closeAdBtn3">×</button>
+                <div class="ad-content" id="adContent3">
+                    <h3 class="ad-title">Special Offer!</h3>
+                    <button class="ad-action-btn" id="adActionBtn3">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Рекламный блок4 -->
+        <div class="ad-container4" id="adContainer4" style="display: none;">
+            <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+                <button class="close-ad-btn" id="closeAdBtn4">×</button>
+                <div class="ad-content" id="adContent4">
+                    <h3 class="ad-title">Special Offer!</h3>
+                    <button class="ad-action-btn" id="adActionBtn4">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Home Button -->
+        <div class="btnHome">
+            <button id="homeButton" aria-label="Back to homepage">
+                Back to Home
+            </button>
+        </div>
+
+        <section class="content">
+            <h2>Time in Costa Rica</h2>
+            <div class="info-card">
+
+                <div class="time-info ">
+                    <div class="time-now">
+                        <!-- Текущее время в Коста-Рике -->
+                        <div class="day-now">
+                            <h3>Current Time in Costa Rica</h3>
+                            <div id="costaRicaTime">
+                                Loading...
+                            </div>
+                            <p id="costaRicaDate" style="color: #666;"></p>
+                            <p><strong>UTC-6</strong> (Central Standard Time)</p>
+                            <p>No daylight saving time</p>
+                        </div>
+
+                        <!-- Часовые пояса -->
+                        <div class="time-zone">
+                            <h3>Time Zone Comparison</h3>
+                            <p>When it's <strong id="currentHour" style="font-size: 2.5rem; ">12:00 PM</strong> in Costa
+                                Rica:</p>
+                            <ul>
+                                <li>New York: <span class="time-diff ny-time" data-offset="2">2:00 PM</span> (EST, UTC-5)</li>
+                                <li>London: <span class="time-diff london-time" data-offset="7">7:00 PM</span> (GMT, UTC+0)</li>
+                                <li>Moscow: <span class="time-diff moscow-time" data-offset="9">10:00 PM</span> (MSK, UTC+3)</li>
+                                <li>Tokyo: <span class="time-diff tokyo-time" data-offset="15">3:00 AM</span> next day (JST, UTC+9)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Business Hours</h3>
+                <ul>
+                    <li><strong>Government offices:</strong> 8:00 AM - 4:00 PM (typically close for lunch 12:00-1:00 PM)
+                    </li>
+                    <li><strong>Banks:</strong> 9:00 AM - 4:00 PM (some until 6:00 PM)</li>
+                    <li><strong>Shops:</strong> 9:00 AM - 7:00 PM (malls until 9:00 PM)</li>
+                    <li><strong>Restaurants:</strong> 11:00 AM - 10:00 PM (varies)</li>
+                </ul>
+            </div>
+
+            <h2>Language</h2>
+
+            <div class="language-info">
+                <div class="info-card">
+                    <h3>Official Language</h3>
+                    <div class="text-with-image"> <!-- Новая обертка -->
+                        <p><strong>Spanish</strong> is the official language of Costa Rica.</p>
+                        <img class="img-costa-rica-dictionary clickable-image" src="img/about/PuraVida.webp"
+                            alt="English-CostaRica Dictionary" role="button" onclick="openModal(this)" />
+                        <!-- Модальное окно (изначально скрыто) -->
+                        <div id="imageModal" class="modal">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <img class="modal-content" id="modalImage">
+                        </div>
+                    </div>
+                    <h3>Key phrases for travelers:</h3>
+                    <div class="table-wrapper">
+                        <table class="table">
+                            <tr>
+                                <th class="lang">Spanish</th>
+                                <th class="lang">English</th>
+                                <th class="lang">Pronunciation</th>
+                            </tr>
+                            <tr>
+                                <td>¡Pura vida!</td>
+                                <td>Hello/Goodbye/Everything's great</td>
+                                <td>POO-rah VEE-dah</td>
+                            </tr>
+                            <tr>
+                                <td>¿Cuánto cuesta?</td>
+                                <td>How much does it cost?</td>
+                                <td>KWAN-toh KWES-tah</td>
+                            </tr>
+                            <tr>
+                                <td>Gracias</td>
+                                <td>Thank you</td>
+                                <td>GRAH-syahs</td>
+                            </tr>
+                            <tr>
+                                <td>¿Dónde está el baño?</td>
+                                <td>Where is the bathroom?</td>
+                                <td>DON-day es-TAH el BAN-yo</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <h3>English & Other Languages</h3>
+                    <p><strong>English</strong> is widely spoken in tourist areas, hotels, and by many younger Costa
+                        Ricans.</p>
+                    <p>In the Caribbean region, you may hear <strong>Creole English</strong> and
+                        <strong>Mekatelyu</strong> (a Jamaican Patois dialect).
+                    </p>
+                    <p>Several indigenous languages are spoken by about 2% of the population, including
+                        <strong>Bribri</strong>, <strong>Cabécar</strong>, and <strong>Maléku</strong>.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Рекламный блок5 -->
+        <div class="ad-container5" id="adContainer5">
+            <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+                <button class="close-ad-btn" id="closeAdBtn5">×</button>
+                <div class="ad-content" id="adContent5">
+                    <h3 class="ad-title">Special Offer!</h3>
+                    <button class="ad-action-btn" id="adActionBtn5">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- JavaScript for navigation - back-home -->
+    <script>
+        document.getElementById("homeButton").addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            setTimeout(() => {
+                window.location.href = "index.html";
+            }, 500); // Дадим полсекунды на плавную прокрутку
+        });
+    </script>
+
+    <script src="js/time-language.js"></script>
+    <script src="js/script-ad.js"></script>
+    <script src="js/script-img_zoom.js"></script>
+</body>
+
+</html>

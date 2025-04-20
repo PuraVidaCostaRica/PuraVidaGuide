@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PuraVida Guide - Explore Costa Rica</title>
+    <meta name="description" content="Discover the best of Costa Rica with PuraVida Guide. Your ultimate travel companion for exploring Costa Rica's culture, tours, and attractions." />
+    <meta name="keywords" content="Costa Rica, travel guide, pura vida, tours, eco tours, attractions, Costa Rica vacations" />
+    <meta name="author" content="PuraVida Guide Team" />
+    <link rel="canonical" href="https://www.puravidaguide.com/" />
+    
+    <!-- Open Graph meta tags for better sharing -->
+    <meta property="og:title" content="PuraVida Guide - Explore Costa Rica" />
+    <meta property="og:description" content="Discover the best of Costa Rica with PuraVida Guide. Your ultimate travel companion for exploring Costa Rica's culture, tours, and attractions." />
+    <meta property="og:image" content="https://www.puravidaguide.com/img/og-image.jpg" />
+    <meta property="og:url" content="https://www.puravidaguide.com/" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PuraVida Guide - Explore Costa Rica" />
+    <meta name="twitter:description" content="Your ultimate travel guide to Costa Rica with tips, tours, and cultural insights." />
+    <meta name="twitter:image" content="https://www.puravidaguide.com/img/og-image.jpg" />
+
+    <!-- Favicon (если есть) -->
+  <link rel="icon" href="img/index/favicon.ico" type="image/x-icon" />
+
+    <!-- Structured Data: Website Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "PuraVida Guide",
+      "url": "https://www.puravidaguide.com/",
+      "description": "Discover Costa Rica with PuraVida Guide. Explore culture, tours, and travel tips."
+    }
+    </script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles-index.css" />
+    <link rel="stylesheet" href="css/weather-time.css" />
+    <link rel="stylesheet" href="css/ad.css" />
+    <link rel="stylesheet" href="css/media-index.css">
+    <link rel="stylesheet" href="css/media-ad.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="overlay">
+            <!-- Time Widget -->
+            <div class="time-widget">
+                <div class="time-title">Current time in Costa Rica</div>
+                <div class="time-value" id="costaRicaTime">--:-- --</div>
+                <div class="day-value" id="costaRicaDate">-- --</div>
+            </div>
+            
+            <h1>PuraVida Guide</h1>
+            <p>Your gateway to Costa Rica</p>
+            
+            <!-- Weather Widget -->
+            <div class="weather-container">
+                <div class="weather-box" data-city="san-jose">
+                    <div class="weather-location">San José</div>
+                    <div class="weather-icon"><i class="fas fa-sun"></i></div>
+                    <div class="weather-temp">--°C/--F</div>
+                    <div class="weather-desc">Loading...</div>
+                    <div class="weather-humidity">Humidity: --%</div>
+                    <div class="weather-updated"></div>
+                </div>
+                
+                <div class="weather-box" data-city="liberia">
+                    <div class="weather-location">Liberia</div>
+                    <div class="weather-icon"><i class="fas fa-cloud-sun"></i></div>
+                    <div class="weather-temp">--°C/--F</div>
+                    <div class="weather-desc">Loading...</div> 
+                    <div class="weather-humidity">Humidity: --%</div>
+                    <div class="weather-updated"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="ad-container ad-index" id="adContainer">
+            <div class="ad-inner-wrapper">
+                <button class="close-ad-btn" id="closeAdBtn">×</button>
+                <div class="ad-content" id="adContent">
+                    <h3 class="ad-title">Special Offer!</h3>
+                    <button class="ad-action-btn" id="adActionBtn">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-grid">
+            <a href="#" class="menu-item" data-section="about">
+                <h2>About Costa Rica</h2>
+            </a>
+            <a href="#" class="menu-item" data-section="tips">
+                <h2>Travel Tips</h2>
+            </a>
+            <a href="#" class="menu-item" data-section="tours">
+                <h2>Tours & Attractions</h2>
+            </a>
+            <a href="#" class="menu-item" data-section="itineraries">
+                <h2>Travel Itineraries</h2>
+            </a>
+        </div>
+    
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal" id="modal">
+            <button class="close-modal-btn" id="closeModalBtn" aria-label="Close modal">×</button>
+            <div class="modal-content" id="modalContent"></div>
+        </div>
+    
+    </main>
+
+    <footer>
+        <div class="logo-footer">
+            <img src="img/index/logo.webp" alt="PuraVida Guide Logo">
+        </div>
+        <a href="#about-us">About Us</a>
+        <p>&copy; 2025 Costa Rica Guide. All rights reserved.</p>
+    </footer>
+
+    <script src="js/time.js"></script>
+    <script src="js/weather-cache.js"></script>
+    <script src="js/script-index.js"></script>
+    <script src="js/script-ad.js"></script>
+</body>
+</html>

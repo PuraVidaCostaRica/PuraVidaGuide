@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5dda6;
+    color: #333;
+}
+
+.hero {
+    height: 65vh;
+    background: url('../img/index/sloth-volcano.webp') center center / cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    transform: translateY(50%);
+    opacity: 0;
+    animation: slideUp 0.6s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+.overlay {
+    background-color: transparent;
+    padding: 2rem;
+    text-align: center;
+    z-index: 2;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.8s;
+}
+
+.overlay h1 {
+    font-size: 6rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    margin-top: -15px;
+}
+
+.overlay p {
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+    text-align: right;
+    margin-top: 0.5rem;
+}
+
+/* Меню */
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /*background: linear-gradient(to bottom, #f3bf80, #f1b277);*/
+    padding: 5px;
+    gap: 5px;
+    margin-top: 20px;
+    margin-left: 10vw;
+    margin-bottom: 10%;
+    transition: margin-left 0.3s ease;
+}
+
+.menu-item {
+    background-color: #f3e0c9;
+    box-shadow: 0 4px 8px #8B5E3C;
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #8B5E3C;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.menu-item:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.menu-item:nth-child(3) {
+    animation-delay: 0.7s;
+}
+
+.menu-item:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.menu-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px #8B5E3C;
+    background-color: #fefcf8;
+}
+
+
+/* Модальное окно */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-color: #f3e0c9;
+    z-index: 101;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 25px #8B5E3C;
+    display: none;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+    transition: all 0.3s ease;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+}
+
+.modal-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* Две колонки */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.modal-btn {
+    padding: 15px;
+    background: linear-gradient(to bottom, #f0cea4, #f1b277);
+    color: #8B5E3C;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px #8B5E3C;
+    transition: all 0.3s ease;
+}
+
+.modal-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background: #fefcf8;
+}
+
+.modal-title {
+    color: #8B5E3C;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 0 20px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.modal-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.modal.active {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.close-modal-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #8B5E3C;
+    cursor: pointer;
+}
+
+/*footer*/
+footer {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 0.9rem;
+    background-color: #f3e0c9;
+    color: #333;
+    align-items:center;
+    box-shadow: 0 4px 8px #8B5E3C;
+  }
+
+  .logo-footer {
+    display: flex;
+    align-items: center; /* выравнивание по вертикали */
+    height: 110%;
+    margin-bottom: 1rem;
+  }
+  
+  .logo-footer img {
+    height: 110%;   /* картинка будет такой же, как контейнер */
+    width: auto;
+    height: 5rem;
+    display: block;
+  }
+
+
+
+/*_____________animations*/
+@keyframes slideUp {
+    0% {
+        transform: translateY(50%);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

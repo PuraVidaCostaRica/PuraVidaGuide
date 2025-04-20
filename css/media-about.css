@@ -1,0 +1,179 @@
+ /* Адаптация для планшетов ( 1024px) 
+ ______________________________________________________*/
+
+ @media (max-width: 1024px) {
+     body {
+         line-height: 1.4;
+         font-size: 0.9rem;
+     }
+
+     .content {
+         padding: 0.5rem;
+         max-width: 55vw;
+     }
+
+     .table-wrapper {
+        min-width: 85%;
+         overflow-x: auto;
+         margin: 0.5rem;
+     }
+
+     .table {        
+        overflow-x: auto;
+         font-size: 0.85rem;
+     }
+
+     .table th,
+     .table td {
+         padding: 0.5rem;
+     }
+
+     .image-gov {
+         max-width: 100px;
+         margin: 0;
+     }
+
+     .play-btn,
+     .pause-btn,
+     .player-time,
+     .audio-player {
+         font-style: 8px;
+         padding: 5px;
+     }
+
+     .link-see{
+        font-size: 1em;
+     }
+ }
+
+ /* Адаптация для мобильных (до 900px) 
+ ________________________________________________________*/
+ @media (max-width: 900px) {}
+
+
+ /* Адаптация для мобильных (до768px)
+ _________________________________________________________ */
+ @media (max-width: 768px) {
+     .logo {
+         width: 2rem;
+         height: 2rem;
+         left: 0.5rem;
+     }
+
+     header {
+         padding: 0.8rem 1rem;
+     }
+
+     h1 {
+         font-size: 1.4rem;
+         margin-left: 20px;
+     }
+
+     h2 {
+         font-size: 1.5rem;
+         margin-top: 1.5rem !important;
+     }
+
+     main {
+         padding: 0.5rem;
+         display: flex;
+         flex-direction: column;
+     }
+
+     /* Кнопка Back to Home */
+    .btnHome {
+         order: 2;
+         margin: 10px;
+     }
+
+     /* Растягиваем основную секцию по ширине экрана */
+     .content {
+         order: 4;
+         max-width: 90vw;
+         padding: 1rem;
+         border-radius: 0;
+         box-shadow: none;
+     }
+
+     .content1{
+        order: 4;
+     }
+
+     .content2{
+        order: 6;
+     }
+
+     .content3{
+        order: 8;
+     }
+
+     .text-with-image {
+        flex-direction: column;
+     }
+
+     .text-with-image  p{
+        order: 2;
+     }
+
+     .img-costa-rica-dictionary {
+        order: 1;
+        max-width: 150px;
+        /* Ограничиваем ширину картинки */
+        height: auto;
+        /* Сохраняем пропорции */
+        border-radius: 4px;
+        /* Закругленные углы (опционально) */
+        margin: auto 0;
+    }
+      
+    .modal-content-money {
+        width: 200px;
+        height: auto;
+    }
+    
+    .intro-text {
+        font-size: 1rem;
+    }
+
+    .back-to-top-wrapper{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .must-try-text {
+        padding-top: 40px;
+      }
+
+
+ }
+
+ /* Медиа-запрос для маленьких телефонов (до 480px)
+ ___________________________________________________________ */
+ @media (max-width: 480px) {
+     main {
+         padding: 0.5rem;
+     }
+
+     h1 {
+        font-size: 1.2rem;
+        margin-left: 10%;
+    }
+
+     .content {
+         padding: 0.8rem;
+     }
+
+     .table {
+        max-width: 95vw;
+         font-size: 0.9rem;
+     }
+
+     .table th,
+     .table td {
+         padding: 0.5rem;
+     }
+
+     .language-info{
+        min-width: 95vw;
+     }
+ }

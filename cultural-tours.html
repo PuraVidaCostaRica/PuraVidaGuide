@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cultural Tours in Costa Rica – Dance, Coffee, Markets & More</title>
+  <meta name="description" content="Explore Costa Rica's rich culture with tours including dance and music workshops, local markets, coffee plantations, festivals, colonial churches, and even day trips to Nicaragua.">
+  <meta name="keywords" content="Costa Rica cultural tours, dance workshops, coffee tours, handicrafts, colonial churches, Costa Rica festivals, Nicaragua day trips">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Cultural Tours in Costa Rica – Dance, Coffee, Markets & More">
+  <meta property="og:description" content="Discover the cultural heart of Costa Rica with immersive tours in dance, music, coffee, crafts, historic churches, and festive celebrations.">
+  <meta property="og:image" content="https://yourdomain.com/img/og/cultural-tours.webp">
+  <meta property="og:url" content="https://yourdomain.com/cultural-tours.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cultural Tours in Costa Rica – Dance, Coffee, Markets & More">
+  <meta name="twitter:description" content="Join cultural tours in Costa Rica: dance, music, handicrafts, churches, coffee, festivals, and even cross-border trips.">
+  <meta name="twitter:image" content="https://yourdomain.com/img/og/cultural-tours.webp">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "Cultural Tours in Costa Rica",
+    "description": "Cultural travel experiences including dance and music workshops, local crafts, coffee plantations, colonial churches, festivals, and day trips to Nicaragua.",
+    "touristType": [
+      "Culture Enthusiasts",
+      "Art Lovers",
+      "History Buffs",
+      "Travelers"
+    ],
+    "image": "https://yourdomain.com/img/og/cultural-tours.webp",
+    "url": "https://yourdomain.com/cultural-tours.html",
+    "inLanguage": "en",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "price": "25.00",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/index/favicon.ico" type="image/x-icon">
+
+ <!--css-->
+  <link rel="stylesheet" href="css/styles-tours.css" />
+  <link rel="stylesheet" href="css/ad.css">
+  <link rel="stylesheet" href="css/img_btn.css">
+  <link rel="stylesheet" href="css/media-about.css">
+  <link rel="stylesheet" href="css/media-ad.css">
+</head>
+
+<body>
+  <header>
+    <h1>Cultural Tours</h1>
+    <div class="logo-container">
+      <img class="logo" src="img/index/logo.webp" alt="PuraVida Guide Logo" />
+    </div>
+  </header>
+
+  <main>
+
+      <!-- Рекламный блок -->
+      <div class="ad-container" id="adContainer" style="display: none;">
+        <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+          <button class="close-ad-btn" id="closeAdBtn">×</button>
+          <div class="ad-content" id="adContent">
+            <h3 class="ad-title">Special Offer!</h3>
+            <button class="ad-action-btn" id="adActionBtn">Learn More</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Рекламный блок1 -->
+      <div class="ad-container1" id="adContainer1">
+        <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+          <button class="close-ad-btn" id="closeAdBtn1">×</button>
+          <div class="ad-content" id="adContent1">
+            <h3 class="ad-title">Special Offer!</h3>
+            <button class="ad-action-btn" id="adActionBtn1">Learn More</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Рекламный блок2 -->
+      <div class="ad-container2" id="adContainer2">
+        <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+          <button class="close-ad-btn" id="closeAdBtn2">×</button>
+          <div class="ad-content" id="adContent2">
+            <h3 class="ad-title">Special Offer!</h3>
+            <button class="ad-action-btn" id="adActionBtn2">Learn More</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Рекламный блок3 -->
+      <div class="ad-container3" id="adContainer3">
+        <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+          <button class="close-ad-btn" id="closeAdBtn3">×</button>
+          <div class="ad-content" id="adContent3">
+            <h3 class="ad-title">Special Offer!</h3>
+            <button class="ad-action-btn" id="adActionBtn3">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+    <!-- Кнопка "Back to Home" -->
+    <div class="btnHome">
+      <button id="homeButton" aria-label="Back to homepage">
+        Back to Home
+      </button>
+    </div>
+
+    <section class="intro-section">
+      <p class="intro-text">
+        Discover the heart and soul of Costa Rica through immersive cultural experiences that go beyond the typical
+        tourist trail.
+        From vibrant local festivals to hands-on workshops and indigenous traditions, these tours offer a deeper
+        connection to the country's rich heritage.
+        Whether you're exploring colonial cities, learning to cook traditional dishes, or dancing to local rhythms,
+        Costa Rica's culture will leave a lasting impression.
+      </p>
+    </section>
+
+    <div class="content1">
+      <!-- Вертикальное меню  -->
+      <nav class="tours-menu" id="top-menu">
+        <ul>
+          <ul>
+            <li><a href="#historical-city">🏛️ Historical City Tours </a></li>
+            <li><a href="#indigenous-community">🌿 Indigenous Community Visits</a></li>
+            <li><a href="#cooking">🍽️ Traditional Cooking Classes </a></li>
+            <li><a href="#dance">💃 Dance & Music Workshops </a></li>
+            <li><a href="#handicrafts">🛍️ Local Markets & Handicrafts</a></li>
+            <li><a href="#coffee-history">☕ Coffee Plantation History Tours</a></li>
+            <li><a href="#churches">🏰 Colonial Churches & Missions </a></li>
+            <li><a href="#festivals">🎉 Festivals & Celebrations </a></li>
+            <li><a href="#nicaragua">🇳🇮 Visit Nicaragua from Costa Rica</a></li>
+            <li><a href="#craft-beer">🍺 Craft Beer Tastings & Brewery Tours</a></li>
+
+          </ul>
+
+        </ul>
+      </nav>
+    </div>
+
+    <section class="content2">
+      <div class="container">
+
+        <article class="artical1" id="historical-city">
+          <h2>Historical City Tours</h2>
+          <img class="scroll-animate" src="img/tours/cultural_tours/historical-city.webp"
+            alt="Historical city tour in Costa Rica">
+          <div class="info-card">
+            <p>
+              Step back in time as you explore Costa Rica's most iconic historical towns. Cities like Cartago, Heredia,
+              and
+              San José reveal the country's rich colonial heritage through their architecture, cathedrals, and plazas.
+            </p>
+            <p>
+              These tours often include visits to local museums, churches, and vibrant markets, offering a deeper
+              understanding
+              of Costa Rica's cultural and political history.
+            </p>
+            <ul>
+              <li><strong>Location:</strong> San José, Cartago, Heredia</li>
+              <li><strong>Best For:</strong> History lovers, cultural explorers</li>
+              <li><strong>Price:</strong> $25-$60 USD per person</li>
+              <li class="tour-links"><a href="https://www.costaricaguides.com/tour/san-jose-city-tour/"
+                  target="_blank">More info & bookings</a></li>
+            </ul>
+            <div class="back-to-top btn-scroll-animate">
+              <a href="#top-menu">↑ Back to Menu</a>
+            </div>
+          </div>
+        </article>
+        <div class="half-width-divider"></div>
+
+        <article class="artical2" id="indigenous-community">
+          <h2>Indigenous Community Visits</h2>
+          <img class="scroll-animate" src="img/tours/cultural_tours/indigenous-community.webp"
+            alt="Indigenous Community Visit in Costa Rica">
+          <div class="info-card">
+            <p>
+              Visiting Costa Rica's indigenous communities offers a rare opportunity to learn about ancient traditions,
+              spiritual beliefs, and sustainable lifestyles. Tribes like the Bribri and Maleku welcome visitors to
+              explore
+              their culture through storytelling, medicinal plant walks, and traditional food preparation.
+            </p>
+            <p>
+              These tours are immersive and respectful, providing a chance to support local communities while gaining
+              insight into Costa Rica's rich heritage that goes beyond the colonial era.
+            </p>
+            <ul>
+              <li><strong>Location:</strong> Talamanca region, Northern Zone</li>
+              <li><strong>Best For:</strong> Cultural travelers, ethically minded tourists</li>
+              <li><strong>Price:</strong> $50-$90 USD per person</li>
+              <li class="tour-links"><a
+                  href="https://www.viator.com/tours/La-Fortuna/Maleku-Indigenous-Reserve-Tour/d821-7453P21"
+                  target="_blank">More info & bookings</a></li>
+            </ul>
+            <div class="back-to-top btn-scroll-animate">
+              <a href="#top-menu">↑ Back to Menu</a>
+            </div>
+          </div>
+        </article>
+        <div class="half-width-divider"></div>
+
+        <article class="artical1" id="cooking">
+          <h2>Traditional Cooking Classes</h2>
+          <img class="scroll-animate" src="img/tours/cultural_tours/cooking.webp" alt="Costa Rican cooking class">
+          <div class="info-card">
+            <p>
+              Dive into Costa Rica’s culture through its cuisine. Traditional cooking classes offer a hands-on way to
+              learn local recipes like gallo pinto, tamales, or empanadas, guided by friendly locals in home-style
+              kitchens.
+            </p>
+            <p>
+              These classes are not only delicious but also deeply cultural, sharing stories behind the dishes and the
+              importance of native ingredients. Some even take place on family farms or open-air kitchens with scenic
+              views.
+            </p>
+            <ul>
+              <li><strong>Location:</strong> La Fortuna, San José, Tamarindo, Puerto Viejo</li>
+              <li><strong>Best For:</strong> Food lovers, families, cultural explorers</li>
+              <li><strong>Price:</strong> $40-$85 USD per person</li>
+              <li class="tour-links">
+                <a href="https://www.viator.com/tours/La-Fortuna/Private-Class-of-Authentic-Costa-Rican-Cuisine-in-San-Francisco/d821-304219P1"
+                  target="_blank">
+                  More info & bookings
+                </a>
+              </li>
+            </ul>
+            <div class="back-to-top btn-scroll-animate">
+              <a href="#top-menu">↑ Back to Menu</a>
+            </div>
+          </div>
+        </article>
+        <div class="half-width-divider"></div>
+      </div>
+    </section>
+
+      <!-- Рекламный блок4 -->
+      <div class="ad-container4" id="adContainer4">
+        <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+          <button class="close-ad-btn" id="closeAdBtn4">×</button>
+          <div class="ad-content" id="adContent4">
+            <h3 class="ad-title">Special Offer!</h3>
+            <button class="ad-action-btn" id="adActionBtn4">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+    <section class="content3">
+      <div class="container">
+        <article class="artical1" id="dance">
+          <h2>Dance and Music Workshops</h2>
+          <img class="scroll-animate" src="img/tours/cultural_tours/dance.webp"
+            alt="Traditional dance and music workshop in Costa Rica">
+          <div class="info-card">
+            <p>
+              Experience the vibrant rhythms of Costa Rica through interactive dance and music workshops. Learn
+              traditional styles like salsa, merengue, or cumbia, often taught by local performers with infectious
+              energy.
+            </p>
+            <p>
+              These workshops give you more than just moves — they connect you to the spirit of the country, its
+              festivals, and the cultural heartbeat of its people. No experience needed, just a love for rhythm and fun!
+            </p>
+            <ul>
+              <li><strong>Location:</strong> San José, Monteverde, Puerto Viejo, Tamarindo</li>
+              <li><strong>Best For:</strong> Music lovers, dancers, cultural travelers</li>
+              <li><strong>Price:</strong> $25–$60 USD per person</li>
+              <li class="tour-links">
+                <a href="https://www.viator.com/searchResults/all?text=costa+rica+dance+music+workshop" target="_blank">
+                  More info & bookings
+                </a>
+              </li>
+            </ul>
+            <div class="back-to-top btn-scroll-animate">
+              <a href="#top-menu">↑ Back to Menu</a>
+            </div>
+          </div>
+        </article>
+        <div class="half-width-divider"></div>
+
+        <article class="artical2" id="handicrafts">
+          <h2>Local Markets and Handicrafts</h2>
+          <img class="scroll-animate" src="img/tours/cultural_tours/handicrafts.webp"
+            alt="Costa Rican local market with handicrafts">
+          <div class="info-card">
+            <p>
+              Discover Costa Rica's cultural soul at bustling local markets, where artisans showcase their handcrafted
+              goods — from vibrant textiles and pottery to carved wooden masks and intricate jewelry.
+            </p>
+            <p>
+              Visiting these markets isn't just about shopping; it’s about connection. Talk to local artists, learn
+              about traditional techniques, and take home a meaningful piece of the country’s heritage.
+            </p>
+            <ul>
+              <li><strong>Location:</strong> San José (Central Market), Sarchí, Monteverde, Tamarindo</li>
+              <li><strong>Best For:</strong> Cultural explorers, souvenir hunters, art lovers</li>
+              <li><strong>Price:</strong> Free to enter, crafts from $5-$100 USD</li>
+              <li class="tour-links">
+                <a href="https://www.viator.com/tours/San-Jose/San-Jose-around-Bites-Sigths-and-Markets/d793-298743P5"
+                  target="_blank">
+                  More info & bookings
+                </a>
+              </li>
+            </ul>
+            <div class="back-to-top btn-scroll-animate">
+              <a href="#top-menu">↑ Back to Menu</a>
+            </div>
+          </div>
+        </article>
+        <div class="half-width-divider"></div>
+
+        <article class="artical1" id="coffee-history">
+          <h2>Coffee Plantation History Tours</h2>
+          <img class="scroll-animate" src="img/tours/cultural_tours/coffee-history.webp"
+            alt="Coffee Plantation in Costa Rica">
+          <div class="info-card">
+            <p>
+              Coffee has played a central role in Costa Rica’s economy, culture, and daily life for over two centuries.
+              Visiting a historic coffee plantation offers a glimpse into the traditional methods of cultivation,
+              harvesting, and roasting.
+            </p>
+            <p>
+              Many tours take you through the entire coffee-making process, from bean to cup, and include tastings of
+              some of the country’s finest blends. These experiences are not only educational but also delicious.
+            </p>
+            <ul>
+              <li><strong>Location:</strong> Central Valley, Naranjo, Doka Estate, Monteverde</li>
+              <li><strong>Best For:</strong> Coffee lovers and cultural enthusiasts</li>
+              <li><strong>Price:</strong> $25–$60 USD per person</li>
+              <li class="tour-links">
+                <a href="https://www.viator.com/tours/Samara/Coffee-Tour-Activity/d24505-415301P17" target="_blank">
+                  More info & bookings
+                </a>
+              </li>
+            </ul>
+            <div class="back-to-top btn-scroll-animate">
+              <a href="#top-menu">↑ Back to Menu</a>
+            </div>
+          </div>
+        </article>
+        <div class="half-width-divider"></div>
+
+        <article class="artical2" id="churches">
+          <h2>Colonial Churches & Missions</h2>
+          <img class="scroll-animate" src="img/tours/cultural_tours/colonial-churches.webp"
+            alt="Colonial Church in Costa Rica">
+          <div class="info-card">
+            <p>
+              Costa Rica’s colonial churches are windows into its Spanish heritage, blending architecture, religion, and
+              local history. Scattered throughout small towns and cities, these churches reflect centuries of cultural
+              evolution.
+            </p>
+            <p>
+              Many guided tours offer historical context, visits to beautifully preserved interiors, and insights into
+              how Catholicism shaped Costa Rican society. Highlights include the Basilica de Nuestra Señora de los
+              Ángeles in Cartago and the Church of Orosi.
+            </p>
+            <ul>
+              <li><strong>Location:</strong> Cartago, Orosi, Nicoya, Heredia</li>
+              <li><strong>Best For:</strong> History and architecture lovers</li>
+              <li><strong>Price:</strong> Free to $30 USD per person</li>
+              <li class="tour-links">
+                <a href="https://www.viator.com/tours/San-Jose/Orosi-and-Lankester-from-San-Jose/d793-36560P183"
+                  target="_blank">
+                  More info & bookings
+                </a>
+              </li>
+            </ul>
+            <div class="back-to-top btn-scroll-animate">
+              <a href="#top-menu">↑ Back to Menu</a>
+            </div>
+          </div>
+        </article>
+        <div class="half-width-divider"></div>
+
+      <article class="artical1" id="festivals">
+        <h2>Festivals & Celebrations</h2>
+        <img class="scroll-animate" src="img/tours/cultural_tours/festival.webp"
+          alt="Festivals and Celebrations in Costa Rica">
+        <img class="scroll-animate1" src="img/tours/cultural_tours/festival1.webp"
+          alt="Festivals and Celebrations in Costa Rica">
+        <div class="info-card">
+          <p>
+            Costa Rica is known for its lively festivals and celebrations throughout the year. From vibrant parades to
+            traditional cultural events, there's always something to experience. The country's festivals celebrate
+            everything
+            from religious traditions to national pride, making it an unforgettable part of any visit.
+          </p>
+          <p>
+            Some of the most famous festivals include the "Fiesta de la Virgen de los Angeles" in Cartago, "Dia de los
+            Muertos" celebrations, and the lively "Carnaval de Limón" with Afro-Caribbean influences.
+          </p>
+          <ul>
+            <li><strong>Location:</strong> Various locations across Costa Rica</li>
+            <li><strong>Best For:</strong> Culture enthusiasts and party-goers</li>
+            <li><strong>Price:</strong> Varies by festival (usually free or low-cost entry)</li>
+          </ul>
+          <h3>Popular Festivals and Dates</h3>
+          <div class="table-wrapper">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Festival</th>
+                  <th>Location</th>
+                  <th>Date</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Fiestas de Palmares</td>
+                  <td>Palmares</td>
+                  <td>January (first two weeks)</td>
+                  <td>One of Costa Rica’s biggest festivals with concerts, rodeos, food stands, and traditional dancing.</td>
+                </tr>
+                <tr>
+                  <td>Festival Internacional de las Artes</td>
+                  <td>San José</td>
+                  <td>March (varies)</td>
+                  <td>An international arts festival with music, theater, and dance performances from around the world.</td>
+                </tr>
+                <tr>
+                  <td>Semana Santa (Holy Week)</td>
+                  <td>Nationwide</td>
+                  <td>March/April (varies)</td>
+                  <td>Religious processions, family events, and traditional observances throughout the country.</td>
+                </tr>
+                <tr>
+                  <td>Independence Day</td>
+                  <td>Nationwide</td>
+                  <td>September 15th</td>
+                  <td>Parades, lantern processions, and civic celebrations marking Costa Rica’s independence from Spain.</td>
+                </tr>
+                <tr>
+                  <td>Fiesta de la Virgen de los Angeles</td>
+                  <td>Cartago</td>
+                  <td>August 2nd</td>
+                  <td>A religious celebration in honor of the Virgin of the Angels, featuring processions and traditional music.</td>
+                </tr>
+                <tr>
+                  <td>Carnaval de Limón</td>
+                  <td>Limón</td>
+                  <td>October (varies)</td>
+                  <td>A lively Afro-Caribbean carnival with parades, dancing, music, and cultural performances.</td>
+                </tr>
+                <tr>
+                  <td>Dia de los Muertos (Day of the Dead)</td>
+                  <td>Various locations</td>
+                  <td>November 1st</td>
+                  <td>Celebration honoring deceased loved ones with altars, food offerings, and cultural rituals.</td>
+                </tr>
+                <tr>
+                  <td>Festival de la Luz</td>
+                  <td>San José</td>
+                  <td>December (varies)</td>
+                  <td>A festive parade of lights and street performances to celebrate the holiday season.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="back-to-top btn-scroll-animate">
+            <a href="#top-menu">↑ Back to Menu</a>
+          </div>
+        </div>
+      </article>
+      <div class="half-width-divider"></div>
+
+      <article class="artical2" id="nicaragua">
+        <h2>Nicaragua Day Trips</h2>
+        <img class="scroll-animate" src="img/tours/cultural_tours/nicaragua.webp" alt="Nicaragua Day Tour from Costa Rica">
+        <div class="info-card">
+          <p>
+            Want to cross a border and explore a whole new culture in just one day? Nicaragua Day Trips offer an incredible
+            opportunity to experience the colonial charm of cities like Granada, visit volcanic landscapes, and explore local
+            markets — all while you're still based in Costa Rica!
+          </p>
+          <p>
+            These tours usually include border assistance, a local guide, and transportation to key landmarks, giving you a
+            seamless and enriching international experience.
+          </p>
+      
+          <ul>
+            <li><strong>Location:</strong> From northern Costa Rica (Liberia region)</li>
+            <li><strong>Duration:</strong> Full-day tour (12–14 hours)</li>
+            <li><strong>Highlights:</strong> Colonial city of Granada, Lake Nicaragua, Masaya Volcano, local markets</li>
+            <li><strong>Documents:</strong> Valid passport and entry/exit requirements</li>
+            <li class="tour-links">
+              <a href="https://www.viator.com/tours/Tamarindo/Full-Day-Nicaragua-Tour/d24763-17279P6"
+                target="_blank">
+                More info & bookings
+              </a>
+            </li>
+          </ul>
+      
+          <div class="back-to-top btn-scroll-animate">
+            <a href="#top-menu">↑ Back to Menu</a>
+          </div>
+        </div>
+      </article>      
+      <div class="half-width-divider"></div>
+
+      <article class="artical1" id="craft-beer">
+        <h2>Craft Beer Tastings and Brewery Tours</h2>
+        <img class="scroll-animate" src="img/tours/cultural_tours/craft-beer.webp" alt="Craft Beer Tasting in Costa Rica">
+        <div class="info-card">
+          <p>
+            Costa Rica's craft beer scene is blossoming, offering unique flavors that blend traditional brewing techniques with local ingredients. From tropical IPAs to rich stouts, there's a taste for every palate.
+          </p>
+          <p>
+            Join guided tours to explore local breweries, learn about the brewing process, and enjoy tastings of various craft beers. It's a delightful way to experience Costa Rican culture through its emerging beer craftsmanship.
+          </p>
+          <ul>
+            <li><strong>Locations:</strong> San José, Tamarindo, Monteverde, and more</li>
+            <li><strong>Best For:</strong> Beer enthusiasts and cultural explorers</li>
+            <li><strong>Price:</strong> Varies by tour (typically $30–$150 USD)</li>
+            <li class="tour-links">
+              <a href="https://www.viator.com/tours/Tamarindo/The-Official-Brew-Tour/d24763-231179P1" target="_blank">
+                More info & bookings
+              </a>
+            </li>
+          </ul>
+          <div class="back-to-top btn-scroll-animate">
+            <a href="#top-menu">↑ Back to Menu</a>
+          </div>
+        </div>
+      </article>           
+      <div class="half-width-divider"></div>      
+
+      </div>
+    </section>
+
+    <!-- Рекламный блок5 -->
+    <div class="ad-container5" id="adContainer5">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn5">×</button>
+        <div class="ad-content" id="adContent5">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn5">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+    <!-- JavaScript for navigation - back-home -->
+    <script>
+      document.getElementById("homeButton").addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  setTimeout(() => {
+      window.location.href = "index.html";
+  }, 500); // Дадим полсекунды на плавную прокрутку
+});
+  </script>
+  
+  <script src="js/script-ad.js"></script>
+  <script src="js/img_btn.js"></script>
+</body>
+
+</html>

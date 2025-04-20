@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currency Converter - Costa Rica Guide</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Convert currencies with live exchange rates. Check Costa Rican colón rates and get travel-ready with Pura Vida Guide.">
+  <meta name="keywords" content="Currency Converter, Costa Rica currency, exchange rates, CRC, USD to CRC, travel money">
+  <meta name="author" content="Pura Vida Guide">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Currency Converter - Costa Rica Guide">
+  <meta property="og:description" content="Live currency converter for travelers to Costa Rica.">
+  <meta property="og:image" content="https://yourdomain.com/img/index/logo.webp">
+  <meta property="og:url" content="https://yourdomain.com/exchange.html">
+  <meta property="og:type" content="website">
+
+  <!-- Structured Data (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Currency Converter - Costa Rica Guide",
+    "description": "Live exchange rates and a currency converter for Costa Rica travelers.",
+    "url": "https://yourdomain.com/exchange.html"
+  }
+  </script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles-about.css" />
+  <link rel="stylesheet" href="css/ad.css" />
+  <link rel="stylesheet" href="css/media-about.css">
+  <link rel="stylesheet" href="css/media-ad.css">
+</head>
+
+
+<body>
+  <header>
+    <h1> Currency Converter</h1>
+    <div class="logo-container">
+      <img class="logo" src="img/index/logo.webp" alt="PuraVida Guide Logo" />
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Рекламный блок -->
+    <div class="ad-container" id="adContainer" style="display: none;">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn">×</button>
+        <div class="ad-content" id="adContent">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Рекламный блок1 -->
+    <div class="ad-container1" id="adContainer1">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn1">×</button>
+        <div class="ad-content" id="adContent1">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn1">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Рекламный блок2 -->
+    <div class="ad-container2" id="adContainer2">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn2">×</button>
+        <div class="ad-content" id="adContent2">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn2">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Рекламный блок3 -->
+    <div class="ad-container3" id="adContainer3">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn3">×</button>
+        <div class="ad-content" id="adContent3">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn3">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Рекламный блок4 -->
+    <div class="ad-container4" id="adContainer4" style="display: none;">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn4">×</button>
+        <div class="ad-content" id="adContent4">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn4">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Кнопка "Назад" -->
+    <div class="btnHome">
+      <button id="homeButton" aria-label="Back to homepage">
+        Back to Home
+      </button>
+    </div>
+
+    <section class="intro-section">
+      <p class="intro-text">
+        Planning a trip to Costa Rica? Use our currency converter to get the most accurate exchange rates for colones.
+      </p>
+    </section>
+
+    <section class="content">
+
+      <div id="CurrencyConverter" class="currency-converter">
+        <h2>Costa Rican Colón Converter</h2>
+        <div class="info-card">
+          <div class="converter-container">
+            <p>Convert between Costa Rican colones (₡) and other world currencies using <strong>live exchange
+                rates</strong>.</p>
+
+            <div class="converter-row">
+              <div class="converter-column">
+                <label class="converter-label">Amount</label>
+                <input type="number" id="amount" class="converter-input" placeholder="Enter amount" value="1" min="0">
+              </div>
+
+              <div class="converter-column">
+                <label class="converter-label">From Currency</label>
+                <select id="fromCurrency" class="converter-select">
+                  <option value="USD" selected>US Dollar ($)</option>
+                  <option value="EUR">Euro (€)</option>
+                  <option value="GBP">British Pound (£)</option>
+                  <option value="CAD">Canadian Dollar (CA$)</option>
+                  <option value="CRC">Costa Rican Colón (₡)</option>
+                </select>
+              </div>
+
+              <div class="converter-column">
+                <label class="converter-label">To Currency</label>
+                <select id="toCurrency" class="converter-select">
+                  <option value="CRC" selected>Costa Rican Colón (₡)</option>
+                  <option value="USD">US Dollar ($)</option>
+                  <option value="EUR">Euro (€)</option>
+                  <option value="GBP">British Pound (£)</option>
+                  <option value="CAD">Canadian Dollar (CA$)</option>
+                </select>
+              </div>
+            </div>
+
+            <button id="convertButton" class="converter-button">
+              <span id="convertText">Convert</span>
+              <span id="convertLoader" class="loading" style="display: none;"></span>
+            </button>
+
+            <div id="result" class="result-box" style="display: none;">
+              <div id="conversionResult"></div>
+              <div id="inverseResult" style="margin-top: 0.5rem; font-size: 0.9rem;"></div>
+            </div>
+
+            <div class="exchange-rate-info">
+              <p>Exchange rates provided by <a href="https://exchangerate-api.com" target="_blank">ExchangeRate-API</a>
+              </p>
+              <p id="updateStatus">Loading current rates... <span class="loading"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Рекламный блок5 -->
+    <div class="ad-container5" id="adContainer5">
+      <div class="ad-inner-wrapper"> <!-- Добавляем обёртку -->
+        <button class="close-ad-btn" id="closeAdBtn5">×</button>
+        <div class="ad-content" id="adContent5">
+          <h3 class="ad-title">Special Offer!</h3>
+          <button class="ad-action-btn" id="adActionBtn5">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+  <!-- JavaScript for navigation - back-home -->
+  <script>
+    document.getElementById("homeButton").addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      setTimeout(() => {
+        window.location.href = "index.html";
+      }, 500); // Дадим полсекунды на плавную прокрутку
+    });
+  </script>
+
+  <script src="js/script-ad.js"></script>
+  <script src="js/exchange.js"></script>
+  <script src="js/script-img_zoom.js"></script>
+</body>
+
+</html>
